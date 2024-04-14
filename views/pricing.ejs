@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<%- include('_header') %>
+  <body>
+    <header>
+      <%- include('_menu') %>
+    </header>
+    <main role="main">
+      <div class="pricing-container">
+        <header class="intro-header" id="pricing_intro_header">
+          <div class="container">
+            <div class="row pricing-intro-title text-center mx-0">
+              <h1 class="intro-header__title text-white line-height-normal">Start Free and Pay as you grow</h1>
+              <p class="lead-lg intro-header__lead text-white-60">
+                Transparent and Flexible Pricing with 14 days of Free Trial
+              </p>
+            </div>
+          </div>
+          <div class="skewed-bg-container">
+            <div class="skewed-bg-main"></div>
+          </div>
+          <section class="pipeline-activate-tab-container">
+            <div class="container">
+              <div class="choose-product-graphic d-none d-lg-block">
+                <img
+                  src="https://res.cloudinary.com/Hevo/image/upload/v1643463214/abstract-bg/choose-product_sj7jth.png"
+                  class="d-none d-lg-block ls-is-cached lazyloaded">
+              </div>
+              <ul class="nav nav-tabs nav-justified nav-tabs-theme" id="pricing_tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link tab-detailed " id="product-pipeline-tab" href="../pipeline" data-toggle="tab"
+                    role="tab" aria-controls="pipeline" aria-selected="true" data-track-click="Product Tab Select"
+                    data-track-category="Pricing Page" data-track-label="pipeline">
+                    <span class="tab-img Hevo-web-icon Hevo-pipeline">
+                    </span>
+                    <span class="detail-body">
+                      <span class="title">
+                        CodePai Pipeline
+                      </span>
+                      <span class="description">
+                        Load Data from any source to your data warehouse
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link tab-detailed active" id="product-activate-tab" href="../activate" data-toggle="tab"
+                    role="tab" aria-controls="activate" aria-selected="true" data-track-click="Product Tab Select"
+                    data-track-category="Pricing Page" data-track-label="activate">
+                    <span class="tab-img Hevo-web-icon Hevo-activate">
+                    </span>
+                    <span class="detail-body">
+                      <span class="title">
+                        CodePai Activate
+                      </span>
+                      <span class="description">
+                        Sync your data warehouse with your business tools (Reverse ETL)
+                      </span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </header>
+        <div class="tab-content">
+          <div class="tab-pane show active" id="" role="tabpanel" aria-labelledby="pricing-activate-tab">
+            <section id="pricing_categories_section">
+              <div class="container">
+                <div class="pricing-categories-header">
+                  <h3 class="pricing-categories-title">Sync your data from your data warehouse to your business tools in
+                    real-time with no-code</h3>
+                </div>
+                <div class="pm-card-deck justify-content-center row">
+                  <div class="col-lg-4 col-sm-6 pricing-col">
+                    <div class="card pricing-model-card activate-pricing-model-card" id="pm-card-1">
+                      <div class="card-header">
+                        <h3 class="card-title">Free</h3>
+                        <div class="price-event-wrap price-wrap-align">
+                          <div class="pm-price pm-price-alignment">
+                            <div class="pm-p-amount">
+                              <span class="dollar-symbol">$</span>
+                              <span class="amount">0</span>
+                            </div>
+                            <div class="pm-p-duration text-fade">/month</div>
+                          </div>
+                        </div>
+                        <div class="pm-card-actions-container text-center">
+                          <a class="btn btn-sm btn-block pricing-cta activate-pricing-cta btn-primary"
+                            href="/activate/signup?step=email&amp;plan=Free"
+                            data-track-click="Activate Free Plan Select" data-track-category="Pricing Page - Activate">
+                            Get Started
+                          </a>
+                        </div>
+                        <div class="container seperator-container"></div>
+                      </div>
+                      <div class="card-body">
+                        <ul class="pm-features">
+                          <li class="enabled">
+                            <span class="oval Hevo-web-icon enabled Hevo-check"></span>
+                            <span class="feature-text">
+                              Includes unlimited Data Warehouses
+                            </span>
+                          </li>
+                          <li class="enabled">
+                            <span class="oval Hevo-web-icon enabled Hevo-check"></span>
+                            <span class="feature-text">
+                              Includes upto 3 SaaS Targets
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 pricing-col">
+                    <div class="card pricing-model-card activate-pricing-model-card" id="pm-card-2">
+                      <div class="card-header">
+                        <h3 class="card-title">Starter</h3>
+                        <div class="price-event-wrap price-wrap-align">
+                          <div class="pm-price pm-price-alignment">
+                            <div class="pm-p-amount">
+                              <span class="dollar-symbol">$</span>
+                              <span class="amount">199</span>
+                            </div>
+                            <div class="pm-p-duration text-fade">/month</div>
+                          </div>
+                        </div>
+                        <div class="pm-card-actions-container text-center">
+                          <a class="btn btn-sm btn-block pricing-cta activate-pricing-cta btn-primary"
+                            href="/activate/signup?step=email&amp;plan=Starter"
+                            data-track-click="Activate Starter Plan Select"
+                            data-track-category="Pricing Page - Activate">
+                            Get Started
+                          </a>
+                        </div>
+                        <div class="container seperator-container"></div>
+                      </div>
+                      <div class="card-body">
+                        <ul class="pm-features">
+                          <li class="enabled">
+                            <span class="oval Hevo-web-icon enabled Hevo-check"></span>
+                            <span class="feature-text">
+                              Includes unlimited Data Warehouses
+                            </span>
+                          </li>
+                          <li class="enabled">
+                            <span class="oval Hevo-web-icon enabled Hevo-check"></span>
+                            <span class="feature-text">
+                              Includes upto 5 SaaS Targets
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="feature-section faq-section ">
+              <div class="container">
+                <h2 class="text-water-blue section-head">Frequently Asked Questions
+                </h2>
+                <div class="row pt-6">
+                  <div class="col">
+                    <div class="accordion-wrap">
+                      <div class="accordion-header">
+                        <h3 class="accordion-title">
+                          What are the Warehouses and SaaS targets supported by CodePai Activate?
+                        </h3>
+                      </div>
+                      <p class="accordion-body">
+                        You can find the complete list of all the Activate integrations <a
+                          href="/integrations/activate/">here</a>.
+                      </p>
+                    </div>
+                    <div class="accordion-wrap">
+                      <div class="accordion-header">
+                        <h3 class="accordion-title">
+                          Is there a user limit/seat limit?
+                        </h3>
+                      </div>
+                      <p class="accordion-body">
+                        You can add any number of users to your account. No additional costs will be incurred.
+                      </p>
+                    </div>
+                    <div class="accordion-wrap">
+                      <div class="accordion-header">
+                        <h3 class="accordion-title">
+                          Is there separate login access for Pipeline and Activate products?
+                        </h3>
+                      </div>
+                      <p class="accordion-body">
+                        You can sign up for both Pipeline and Activate with the same login credentials.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-1 mb-8 mb-md-0"></div>
+                  <div class="col">
+                    <div class="accordion-wrap">
+                      <div class="accordion-header">
+                        <h3 class="accordion-title">
+                          Does CodePai Activate have a free trial?
+                        </h3>
+                      </div>
+                      <p class="accordion-body">
+                        CodePai Activate offers a no-commitment 14 day free trial with unlimited access to all features.
+                      </p>
+                    </div>
+                    <div class="accordion-wrap">
+                      <div class="accordion-header">
+                        <h3 class="accordion-title">
+                          How does CodePai Activate handle support?
+                        </h3>
+                      </div>
+                      <p class="accordion-body">
+                        CodePai Activate has a Live chat and e-mail support.
+                      </p>
+                    </div>
+                    <div class="accordion-wrap">
+                      <div class="accordion-header">
+                        <h3 class="accordion-title">
+                          Is there a cap on the number of rows (events) that can be ingested?
+                        </h3>
+                      </div>
+                      <p class="accordion-body">
+                        No, there is no limit on the number of rows (events). The cap is only on the number of SaaS
+                        Targets that can be connected.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="container activate-get-started-container">
+              <div class="request-plan request-startup-plan">
+                <div class="no-gutters row justify-content-between">
+                  <div class="rp-illustration d-none d-lg-block">
+                    <img class="img-fluid" width="356px"
+                      src="https://res.cloudinary.com/Hevo/image/upload/w_500/v1623601295/illustrations/pricing-left-img_z0ju2d.png">
+                  </div>
+                  <div class="rp-content col-md text-center text-lg-left">
+                    <h2 class="text-dusk font-weight-normal">
+                      <span class="d-block text-primary">Load data from your warehouse into your business
+                        applications</span>
+                      Get your 14 day Free Trial
+                    </h2>
+                    <div class="pricing-free-trial-form-container mt-7">
+                      <form class="free-trial-form input-group-stacked-btn-wrapper invalid" novalidate=""
+                        autocomplete="off" data-section="Pipeline Pricing Get Started" data-product="activate"
+                        data-hs-cf-bound="true" data-factors-bind="true">
+                        <input type="hidden" name="csrfmiddlewaretoken"
+                          value="pdlRb4iqgOkbzH8Vv4FzqmSbimcy8Y0N9qjnpmSuVgaOZZzyI2LT8oBATgB1Cwiw">
+                        <div class="input-group">
+                          <input name="email" type="email" class="form-control form-control-sm input-tooltip invalid"
+                            placeholder="name@company.com" aria-label="name@company.com" required="">
+                          <div class="input-group-append">
+                            <span class="Hevo-web-icon Hevo-error-circle input-group-glyph form-error-glyph"
+                              data-placement="bottom" data-form-error-tooltip="email"
+                              data-default-error-title="Please enter your business email : <span class='font-weight-semi-bold'>name@company.com</span>">
+                            </span>
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm stacked-btn trial-button"
+                          data-factors-bind="true">
+                          <span class="btn-main-body">
+                            Get Started Now
+                          </span>
+                          <img class="btn-loading-indicator"
+                            src="https://res.cloudinary.com/Hevo/image/upload/v1650395517/Hevo-website/loaders/btn-secondary-loading_dsw2wj.svg">
+                        </button>
+                      </form>
+                      <small class="form-text mx-3 mt-2 text-fade text-left">Unrestricted access in Free Trial</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade ebook-modal" id="free_credits_modal" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <img class="close-icon" data-dismiss="modal" aria-label="Close"
+                src="https://res.cloudinary.com/Hevo/image/upload/v1650456848/Hevo-website/icons/close-white_aakthq.svg">
+              <div class="modal-body form-body">
+                <figure class="d-none d-sm-block">
+                  <img class="lazy"
+                    data-src="https://res.cloudinary.com/Hevo/image/upload/v1650623041/illustrations/free-credit-thumbnail_ppy42q.webp">
+                </figure>
+                <div class="flex-grow-1 p-5">
+                  <h1 class="text-dusk">Get $500 Credits To Try CodePai</h1>
+                  <form class="free-credit-form mx-auto mt-6" novalidate="" autocomplete="off" data-hs-cf-bound="true"
+                    data-factors-bind="true">
+                    <div class="input-group-stacked-btn-wrapper input-group-stacked-btn-wrapper--gray">
+                      <div class="input-group input-group--elevated">
+                        <input name="email" type="email" class="form-control" placeholder="name@company.com"
+                          aria-label="name@company.com" required="">
+                        <div class="input-group-append">
+                          <span class="Hevo-web-icon Hevo-error-circle input-group-glyph form-error-glyph"
+                            data-placement="bottom" data-form-error-tooltip="email"
+                            data-default-error-title="Please enter your business email : <span class='font-weight-semi-bold'>name@company.com</span>">
+                          </span>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary submit-btn stacked-btn" data-factors-bind="true">
+                        <span class="btn-main-body">
+                          Free Credits
+                        </span>
+                        <img class="btn-loading-indicator"
+                          src="https://res.cloudinary.com/Hevo/image/upload/v1650395517/Hevo-website/loaders/btn-secondary-loading_dsw2wj.svg">
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="modal-body success-body text-center my-8 d-none">
+                <h1 class="text-dusk">We will reach out with your free credits soon!</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="featurette-divider" class="featurette">
+      <!-- FOOTER -->
+      <%- include('_footer')%>
+    </main>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+      integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+      crossorigin="anonymous"></script>
+    <script src="/js/codepai.js"></script>
+  </body>
+</html>

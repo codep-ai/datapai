@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="/images/datapai-logo.png" height="50" width="50" style="margin-top:3px;vertical-align:top;margin-right:5px;">
+      <div style="padding-top:7px; float:right;"></div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown ml-lg-2">
+                <a class="nav-link dropdown-toggle" href="/products">Products</a>
+              </li>
+            <li class="nav-item dropdown ml-lg-2">
+                <a class="nav-link dropdown-toggle" href="/integrations">Integrations</a>
+              </li>
+            <!-- <li class="nav-item dropdown ml-lg-2">
+              <a class="nav-link dropdown-toggle" href="/pricing">Pricing</a>
+            </li> -->
+            <!--  <li class="nav-item dropdown ml-lg-2">
+              <a class="nav-link dropdown-toggle" href="/customers">Customers</a>
+            </li> -->
+            <!-- <li class="nav-item dropdown ml-lg-2">
+              <a class="nav-link dropdown-toggle" href="/resources">Resources</a>
+            </li> -->
+            <!-- <li class="nav-item dropdown ml-lg-2">
+                <a class="nav-link dropdown-toggle" href="/company">Company</a>
+            </li> -->
+            <li class="nav-item dropdown ml-lg-2">
+                <a class="nav-link dropdown-toggle" href="/ourteam">Our Team</a>
+            </li>
+            <!-- <li class="nav-item dropdown ml-lg-2">
+                <a class="nav-link dropdown-toggle" href="/gallery">Gallery</a>
+            </li> -->
+            <li class="nav-item dropdown ml-lg-2">
+              <a class="nav-link dropdown-toggle" href="/contact">Contact Us</a>
+            </li>
+      </ul>
+    </div>
+  </div>
+</nav>

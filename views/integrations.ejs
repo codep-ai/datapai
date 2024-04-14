@@ -1,0 +1,882 @@
+<!doctype html>
+<html lang="en">
+<%- include('_header') %>
+
+  <body>
+    <header>
+      <%- include('_menu') %>
+    </header>
+    <main role="main">
+      <div class="integrations-container-v2">
+        <header class="intro-header" id="integrations_intro_header">
+          <div class="container text-center">
+            <h1 class="intro-header__title text-white line-height-normal">Pre-built Integrations for real-time customer
+              data</h1>
+            <p class="lead-lg intro-header__lead text-white-60">
+              Consolidate data from all your tools for real-time business decisions. DataPAI supports ready-to-use
+              integrations across Databases, SaaS Applications, Cloud Storage, SDKs, and Streaming Services.
+              Effortlessly connect any source and analyze data across various data formats.
+            </p>
+          </div>
+          <div class="skewed-bg-container">
+            <div class="skewed-bg-main"></div>
+          </div>
+          <section class="pipeline-activate-tab-container">
+            <div class="container">
+              <div class="choose-product-graphic d-none d-lg-block">
+                <img
+                  src="https://res.cloudinary.com/Hevo/image/upload/v1643463214/abstract-bg/choose-product_sj7jth.png"
+                  class="d-none d-lg-block ls-is-cached lazyloaded">
+              </div>
+              <ul class="nav nav-tabs nav-justified nav-tabs-theme" id="pricing_tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link tab-detailed active" id="product-pipeline-tab" href="../pipeline" data-toggle="tab"
+                    role="tab" aria-controls="pipeline" aria-selected="true" data-track-click="Product Tab Select"
+                    data-track-category="Pricing Page" data-track-label="pipeline">
+                    <span class="tab-img DataPAI-web-icon DataPAI-pipeline">
+                    </span>
+                    <span class="detail-body">
+                      <span class="title">
+                        DataPAI Pipeline
+                      </span>
+                      <span class="description">
+                        Load Data from any source to your data warehouse
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link tab-detailed " id="product-activate-tab" href="../activate" data-toggle="tab"
+                    role="tab" aria-controls="activate" aria-selected="true" data-track-click="Product Tab Select"
+                    data-track-category="Pricing Page" data-track-label="activate">
+                    <span class="tab-img DataPAI-web-icon DataPAI-activate">
+                    </span>
+                    <span class="detail-body">
+                      <span class="title">
+                        DataPAI Activate
+                      </span>
+                      <span class="description">
+                        Sync your data warehouse with your business tools (Reverse ETL)
+                      </span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </header>
+        <div class="tab-content">
+          <div class="tab-pane show active" id="pipeline" role="tabpanel" aria-labelledby="pricing-pipeline-tab">
+            <div class="category-list-h-wrapper d-block d-lg-none">
+              <div id="undefined-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 0px;">
+                <div class="category-list-h-container" style="position: fixed; top: 80px;">
+                  <ul class="category-list category-list-h">
+                    <li class="active" data-for="-1" data-category="-1">
+                      All Integrations
+                    </li>
+                    <li class="" data-category="database">
+                      Database
+                    </li>
+                    <li class="" data-category="data_warehouse">
+                      Data Warehouse
+                    </li>
+                    <li class="" data-category="cloud_storage">
+                      File Storage
+                    </li>
+                    <li class="" data-category="marketing_and_email">
+                      Marketing
+                    </li>
+                    <li class="" data-category="analytics">
+                      User Analytics
+                    </li>
+                    <li class="" data-category="payments">
+                      Finance And Accounting
+                    </li>
+                    <li class="" data-category="crm">
+                      CRM
+                    </li>
+                    <li class="" data-category="ecommerce">
+                      Ecommerce
+                    </li>
+                    <li class="" data-category="collaboration">
+                      Collaboration
+                    </li>
+                    <li class="" data-category="sdk_streaming">
+                      Streaming
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="border"></div>
+              <ul class="free-sources-checkbox">
+                <li class="mt-5">
+                  <input type="checkbox" id="is_free" name="is_free" class="mr-2 is_free" value="1">
+                  <label for="is_free">
+                    Free Sources Only
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="container">
+              <div class="integrations-categories-header">
+                <h3 class="integrations-categories-title">Unify and sync your data from 100+ sources to your
+                  destination, in real-time. We integrate with all popular data sources and warehouses - and we are
+                  adding more !!</h3>
+              </div>
+              <div class="row page-body">
+
+                <div class="col-lg integrations-wrapper">
+
+                  <div class="integration-groups-container mt-8" id="integration-groups-container">
+                    <div class="integration-group-container">
+                      <div class="entity-type-header"><span>Destinations</span></div>
+                      <div class="row">
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/destination/redshift">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/dd377842a2ab5a997bb544d87cd7a859.png"
+                                  class="cloudinary-image ls-is-cached lazyloaded" alt="Redshift" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/dd377842a2ab5a997bb544d87cd7a859.png">
+                              </div>
+                              <div class="integration-entity-name">Redshift</div>
+                            </a>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/destination/firebolt">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/d28fb031fcfe48c9b815ac91acd9c6f6_o4fn3p"
+                                  class="cloudinary-image ls-is-cached lazyloaded" alt="Firebolt" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/d28fb031fcfe48c9b815ac91acd9c6f6_o4fn3p">
+                              </div>
+                              <div class="integration-entity-name">Firebolt</div>
+                            </a>
+                            <div class="mt-1">
+                              <span class="badge badge-secondary">
+                                New
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/destination/databricks">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/8079e0342cfd4c58a7f8cab901f54c68_mt13et"
+                                  class="cloudinary-image ls-is-cached lazyloaded" alt="Databricks" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/8079e0342cfd4c58a7f8cab901f54c68_mt13et">
+                              </div>
+                              <div class="integration-entity-name">Databricks</div>
+                            </a>
+                            <div class="mt-1">
+                              <span class="badge badge-secondary">
+                                New
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/destination/snowflake">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/d4197ae0680a2ed8b31b5d8c23aed2e7.svg"
+                                  class="cloudinary-image ls-is-cached lazyloaded" alt="Snowflake" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/d4197ae0680a2ed8b31b5d8c23aed2e7.svg">
+                              </div>
+                              <div class="integration-entity-name">Snowflake</div>
+                            </a>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/destination/bigquery">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/af68e7f814ef38c840e6e3f61da7efc7.png"
+                                  class="cloudinary-image ls-is-cached lazyloaded" alt="BigQuery" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/af68e7f814ef38c840e6e3f61da7efc7.png">
+                              </div>
+                              <div class="integration-entity-name">BigQuery</div>
+                            </a>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/destination/postgresql">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/43fb83bf0b0b95e25c4d25c8b0b56b14.png"
+                                  class="cloudinary-image ls-is-cached lazyloaded" alt="PostgreSQL" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/43fb83bf0b0b95e25c4d25c8b0b56b14.png">
+                              </div>
+                              <div class="integration-entity-name">PostgreSQL</div>
+                            </a>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/destination/mysql">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/48b566b58bddcbdc524f2da058678ada.png"
+                                  class="cloudinary-image ls-is-cached lazyloaded" alt="MySQL" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/48b566b58bddcbdc524f2da058678ada.png">
+                              </div>
+                              <div class="integration-entity-name">MySQL</div>
+                            </a>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/destination/ms-sql-server">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/59ca784d5e6e567feabffdadb9a1cd99.png"
+                                  class="cloudinary-image ls-is-cached lazyloaded" alt="MS SQL Server" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/59ca784d5e6e567feabffdadb9a1cd99.png">
+                              </div>
+                              <div class="integration-entity-name">MS SQL Server</div>
+                            </a>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <div class="integration-entity-img-wrapper">
+                              <img
+                                data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/1339e4efbf4a6e168184b2207e70007a.png"
+                                class="cloudinary-image ls-is-cached lazyloaded" alt="MySQL Amazon Aurora" width="90"
+                                src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/1339e4efbf4a6e168184b2207e70007a.png">
+                            </div>
+                            <div class="integration-entity-name">MySQL Amazon Aurora</div>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="integration-group-container">
+                      <div class="entity-type-header"><span>Sources</span></div>
+                      <div class="row">
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <div class="integration-entity-img-wrapper">
+                              <img
+                                data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/dd377842a2ab5a997bb544d87cd7a859.png"
+                                class="cloudinary-image ls-is-cached lazyloaded" alt="Redshift" width="90"
+                                src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/dd377842a2ab5a997bb544d87cd7a859.png">
+                            </div>
+                            <div class="integration-entity-name">Redshift</div>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <div class="integration-entity-img-wrapper">
+                              <img
+                                data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/e1e50c1e7c7b442e59e7fbeec44da8ce.svg"
+                                class="cloudinary-image ls-is-cached lazyloaded" alt="Google Analytics 360" width="90"
+                                src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/e1e50c1e7c7b442e59e7fbeec44da8ce.svg">
+                            </div>
+                            <div class="integration-entity-name">Google Analytics 360</div>
+                            <div class="mt-1">
+                              <span class="badge badge-free">Free</span>
+                              <span class="badge badge-secondary">
+                                New
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <div class="integration-entity-img-wrapper">
+                              <img
+                                data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/7a8af36f3f5515dc09e0c1b6d79c3f2d.png"
+                                class="cloudinary-image ls-is-cached lazyloaded" alt="Heroku for PostgreSQL" width="90"
+                                src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/7a8af36f3f5515dc09e0c1b6d79c3f2d.png">
+                            </div>
+                            <div class="integration-entity-name">Heroku for PostgreSQL</div>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <div class="integration-entity-img-wrapper">
+                              <img
+                                data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/798eb97bb472d3e94870a5e76032f53b.png"
+                                class="cloudinary-image ls-is-cached lazyloaded" alt="Instagram Business" width="90"
+                                src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/798eb97bb472d3e94870a5e76032f53b.png">
+                            </div>
+                            <div class="integration-entity-name">Instagram Business</div>
+                            <div class="mt-1">
+                              <span class="badge badge-secondary">
+                                New
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <div class="integration-entity-img-wrapper">
+                              <img
+                                data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/4d5b102da209048cebb5683dbf5e2ec9.svg"
+                                class="cloudinary-image ls-is-cached lazyloaded" alt="Shopify Webhook" width="90"
+                                src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/4d5b102da209048cebb5683dbf5e2ec9.svg">
+                            </div>
+                            <div class="integration-entity-name">Shopify Webhook</div>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <div class="integration-entity-img-wrapper">
+                              <img
+                                data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/6ee13b970c3b0eaf64c456240618171f.svg"
+                                class="cloudinary-image ls-is-cached lazyloaded" alt="Intercom Webhook" width="90"
+                                src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/6ee13b970c3b0eaf64c456240618171f.svg">
+                            </div>
+                            <div class="integration-entity-name">Intercom Webhook</div>
+                            <div class="mt-1">
+                              <span class="badge badge-free">Free</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <div class="integration-entity-img-wrapper">
+                              <img
+                                data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/8deb8306b5c735f729b16190197e5240.svg"
+                                class="cloudinary-image ls-is-cached lazyloaded" alt="SendGrid Webhook" width="90"
+                                src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/8deb8306b5c735f729b16190197e5240.svg">
+                            </div>
+                            <div class="integration-entity-name">SendGrid Webhook</div>
+                            <div class="mt-1">
+                              <span class="badge badge-free">Free</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <div class="integration-entity-img-wrapper">
+                              <img
+                                data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/dfa67ff2dfcbe143d15969576b9d400a.svg"
+                                class="cloudinary-image ls-is-cached lazyloaded" alt="MongoDB Atlas" width="90"
+                                src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/dfa67ff2dfcbe143d15969576b9d400a.svg">
+                            </div>
+                            <div class="integration-entity-name">MongoDB Atlas</div>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <div class="integration-entity-img-wrapper">
+                              <img
+                                data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/firebase_pxlrtm"
+                                class="cloudinary-image ls-is-cached lazyloaded" alt="Firebase Analytics" width="90"
+                                src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/firebase_pxlrtm">
+                            </div>
+                            <div class="integration-entity-name">Firebase Analytics</div>
+                            <div class="mt-1">
+                              <span class="badge badge-free">Free</span>
+                              <span class="badge badge-secondary">
+                                New
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <div class="integration-entity-img-wrapper">
+                              <img
+                                data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/46186ab3d5eeeb0a90f16283d8229534_efublo"
+                                class="cloudinary-image ls-is-cached lazyloaded" alt="Google Analytics 4" width="90"
+                                src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/46186ab3d5eeeb0a90f16283d8229534_efublo">
+                            </div>
+                            <div class="integration-entity-name">Google Analytics 4</div>
+                            <div class="mt-1">
+                              <span class="badge badge-free">Free</span>
+                              <span class="badge badge-secondary">
+                                New
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <div class="integration-entity-img-wrapper">
+                              <img
+                                data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/884288e987734aa4bb45f2ae39b34b13_xvtudl"
+                                class="cloudinary-image ls-is-cached lazyloaded" alt="Snapchat" width="90"
+                                src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/884288e987734aa4bb45f2ae39b34b13_xvtudl">
+                            </div>
+                            <div class="integration-entity-name">Snapchat</div>
+                            <div class="mt-1">
+                              <span class="badge badge-free">Free</span>
+                              <span class="badge badge-secondary">
+                                Beta
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <div class="integration-entity-img-wrapper">
+                              <img
+                                data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/08ba104a1e4a4de981ac89348a184506_xrrep2"
+                                class="cloudinary-image ls-is-cached lazyloaded" alt="Pinterest Ads" width="90"
+                                src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/08ba104a1e4a4de981ac89348a184506_xrrep2">
+                            </div>
+                            <div class="integration-entity-name">Pinterest Ads</div>
+                            <div class="mt-1">
+                              <span class="badge badge-free">Free</span>
+                              <span class="badge badge-secondary">
+                                Beta
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <div class="integration-entity-img-wrapper">
+                              <img
+                                data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/f7ba47ced3b24b2e865135820ae9f3b2_hu24qp"
+                                class="cloudinary-image ls-is-cached lazyloaded" alt="TikTok Ads" width="90"
+                                src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/f7ba47ced3b24b2e865135820ae9f3b2_hu24qp">
+                            </div>
+                            <div class="integration-entity-name">TikTok Ads</div>
+                            <div class="mt-1">
+                              <span class="badge badge-free">Free</span>
+                              <span class="badge badge-primary">
+                                Coming Soon
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <div class="integration-entity-img-wrapper">
+                              <img
+                                data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/887602cd054c4a7eab4991946e1e1575_czc6tx"
+                                class="cloudinary-image ls-is-cached lazyloaded" alt="QuickBooks Online" width="90"
+                                src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/887602cd054c4a7eab4991946e1e1575_czc6tx">
+                            </div>
+                            <div class="integration-entity-name">QuickBooks Online</div>
+                            <div class="mt-1">
+                              <span class="badge badge-free">Free</span>
+                              <span class="badge badge-secondary">
+                                Beta
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <div class="integration-entity-img-wrapper">
+                              <img
+                                data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/af68e7f814ef38c840e6e3f61da7efc7.png"
+                                class="cloudinary-image ls-is-cached lazyloaded" alt="BigQuery" width="90"
+                                src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/af68e7f814ef38c840e6e3f61da7efc7.png">
+                            </div>
+                            <div class="integration-entity-name">BigQuery</div>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/source/postgresql">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/43fb83bf0b0b95e25c4d25c8b0b56b14.png"
+                                  class="cloudinary-image ls-is-cached lazyloaded" alt="PostgreSQL" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/43fb83bf0b0b95e25c4d25c8b0b56b14.png">
+                              </div>
+                              <div class="integration-entity-name">PostgreSQL</div>
+                            </a>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/source/mysql">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/48b566b58bddcbdc524f2da058678ada.png"
+                                  class="cloudinary-image ls-is-cached lazyloaded" alt="MySQL" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/48b566b58bddcbdc524f2da058678ada.png">
+                              </div>
+                              <div class="integration-entity-name">MySQL</div>
+                            </a>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <div class="integration-entity-img-wrapper">
+                              <img
+                                data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/24e5fbf869dd3537b8e3ced245490224.png"
+                                class="cloudinary-image ls-is-cached lazyloaded" alt="Amazon S3" width="90"
+                                src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/24e5fbf869dd3537b8e3ced245490224.png">
+                            </div>
+                            <div class="integration-entity-name">Amazon S3</div>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/source/google-cloud-storage">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/866237537c84b88929af2f0ead7c2fad.png"
+                                  class="cloudinary-image lazyloaded" alt="Google Cloud Storage" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/866237537c84b88929af2f0ead7c2fad.png">
+                              </div>
+                              <div class="integration-entity-name">Google Cloud Storage</div>
+                            </a>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <div class="integration-entity-img-wrapper">
+                              <img
+                                data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/3f169391034696293398d8dd946cb83a.png"
+                                class="cloudinary-image lazyloaded" alt="Xero" width="90"
+                                src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/3f169391034696293398d8dd946cb83a.png">
+                            </div>
+                            <div class="integration-entity-name">Xero</div>
+                            <div class="mt-1">
+                              <span class="badge badge-secondary">
+                                New
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/source/ms-sql-server">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/59ca784d5e6e567feabffdadb9a1cd99.png"
+                                  class="cloudinary-image ls-is-cached lazyloaded" alt="MS SQL Server" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/59ca784d5e6e567feabffdadb9a1cd99.png">
+                              </div>
+                              <div class="integration-entity-name">MS SQL Server</div>
+                            </a>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/source/mariadb">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/7391ab856a44acc4e0849ff8deb3d96a.png"
+                                  class="cloudinary-image ls-is-cached lazyloaded" alt="MariaDB" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/7391ab856a44acc4e0849ff8deb3d96a.png">
+                              </div>
+                              <div class="integration-entity-name">MariaDB</div>
+                            </a>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/source/mongodb">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/bd1b61761b620b0282ff86f8c8b7c3b2.png"
+                                  class="cloudinary-image ls-is-cached lazyloaded" alt="MongoDB" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/bd1b61761b620b0282ff86f8c8b7c3b2.png">
+                              </div>
+                              <div class="integration-entity-name">MongoDB</div>
+                            </a>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/source/oracle">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/4d9402a904a09985424b2004535a7c6c.png"
+                                  class="cloudinary-image ls-is-cached lazyloaded" alt="Oracle" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/4d9402a904a09985424b2004535a7c6c.png">
+                              </div>
+                              <div class="integration-entity-name">Oracle</div>
+                            </a>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/source/elasticsearch">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/aa42e1e36ebc8b5d81205ae1183968df.png"
+                                  class="cloudinary-image ls-is-cached lazyloaded" alt="ElasticSearch" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/aa42e1e36ebc8b5d81205ae1183968df.png">
+                              </div>
+                              <div class="integration-entity-name">ElasticSearch</div>
+                            </a>
+                            <div class="mt-1">
+                              <span class="badge badge-secondary">
+                                New
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/source/rest-api">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/ac2b239a34f79ac4aa73d17ccf479c18.png"
+                                  class="cloudinary-image lazyloaded" alt="REST API" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/ac2b239a34f79ac4aa73d17ccf479c18.png">
+                              </div>
+                              <div class="integration-entity-name">REST API</div>
+                            </a>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/source/kafka">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/0ac8643995d5023f9ce532fe9a71265a.png"
+                                  class="cloudinary-image lazyloaded" alt="Kafka" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/0ac8643995d5023f9ce532fe9a71265a.png">
+                              </div>
+                              <div class="integration-entity-name">Kafka</div>
+                            </a>
+                            <div class="mt-1">
+                              <span class="badge badge-secondary">
+                                New
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <div class="integration-entity-img-wrapper">
+                              <img
+                                data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/ee2b6f42cb36c948293ac8dd93b554ef.svg"
+                                class="cloudinary-image lazyloaded" alt="Confluent Cloud" width="90"
+                                src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/ee2b6f42cb36c948293ac8dd93b554ef.svg">
+                            </div>
+                            <div class="integration-entity-name">Confluent Cloud</div>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/source/google-drive">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/686b7a03e660cf0ba7747d53c8df0adb.png"
+                                  class="cloudinary-image lazyloaded" alt="Google Drive" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/686b7a03e660cf0ba7747d53c8df0adb.png">
+                              </div>
+                              <div class="integration-entity-name">Google Drive</div>
+                            </a>
+                            <div class="mt-1">
+                              <span class="badge badge-free">Free</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/source/ftpsftp">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/f75f7db623e4e2b896cdb16f81b231a7.png"
+                                  class="cloudinary-image lazyloaded" alt="FTP/SFTP" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/f75f7db623e4e2b896cdb16f81b231a7.png">
+                              </div>
+                              <div class="integration-entity-name">FTP/SFTP</div>
+                            </a>
+                            <div class="mt-1">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/source/google-sheets">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/2264823f2148cc5c07dea21278e4a4ad.png"
+                                  class="cloudinary-image ls-is-cached lazyloaded" alt="Google Sheets" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/2264823f2148cc5c07dea21278e4a4ad.png">
+                              </div>
+                              <div class="integration-entity-name">Google Sheets</div>
+                            </a>
+                            <div class="mt-1">
+                              <span class="badge badge-free">Free</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                          <div class="integration-entity mx-auto">
+                            <a href="/integrations/source/salesforce">
+                              <div class="integration-entity-img-wrapper">
+                                <img
+                                  data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/cb5dc72b1875f636caa330dba6799b89.png"
+                                  class="cloudinary-image ls-is-cached lazyloaded" alt="Salesforce" width="90"
+                                  src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_90/v1/Hevo-website/integrations/logo/cb5dc72b1875f636caa330dba6799b89.png">
+                              </div>
+                              <div class="integration-entity-name">Salesforce</div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="suggest-integration suggest-integration-container mb-0">
+                    <div class="no-gutters row justify-content-between">
+                      <div class="left-content col-md text-center text-md-left pr-4">
+                        <h2 class="font-weight-normal">
+                          <span class="d-block text-primary">Can’t find your integration?</span>
+                          Please let us know, we will build for you
+                        </h2>
+                        <form class="d-flex suggestion-integration-form mt-8 invalid" role="form" novalidate=""
+                          autocomplete="off" data-hs-cf-bound="true" data-factors-bind="true">
+                          <div class="input-group input-group--elevated suggest-integration-control">
+                            <input name="suggested-integration" type="text"
+                              class="form-control form-control-sm input-tooltip invalid"
+                              placeholder="Tell us the integration you want"
+                              aria-label="Tell us the integration you want" required="">
+                            <div class="input-group-append">
+                              <span class="DataPAI-web-icon DataPAI-error-circle input-group-glyph form-error-glyph"
+                                data-placement="bottom" data-form-error-tooltip="suggested-integration"
+                                data-default-error-title="Enter the name of the Integration">
+                              </span>
+                            </div>
+                          </div>
+                          <div class="input-group input-group--elevated d-none email-control">
+                            <input name="email" type="email" class="form-control form-control-sm input-tooltip"
+                              placeholder="name@company.com" aria-label="name@company.com"
+                              data-DataPAI-form-control-disabled="" required="">
+                            <div class="input-group-append">
+                              <span class="DataPAI-web-icon DataPAI-error-circle input-group-glyph form-error-glyph"
+                                data-placement="bottom" data-form-error-tooltip="email"
+                                data-default-error-title="Please enter your business email : <span class='font-weight-semi-bold'>name@company.com</span>">
+                              </span>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-sm btn-white btn-icon stacked-btn submit-btn ml-3"
+                            data-factors-bind="true">
+                            <span class="DataPAI-web-icon DataPAI-right btn-main-body"></span>
+                            <img class="btn-loading-indicator"
+                              src="https://res.cloudinary.com/Hevo/image/upload/v1650395615/Hevo-website/loaders/btn-white-loading_asxhxx.svg">
+                          </button>
+                        </form>
+                        <div class="form-success-msg mt-2">Thank You! We’ve received your request and we will notify you
+                          when it’s ready</div>
+                      </div>
+                      <img class="suggest-integration-illustration col-md-auto d-none d-md-block img-fluid"
+                        src="https://res.cloudinary.com/Hevo/image/upload/v1649855588/Hevo-website/integration-pipeline/integration-right_liqr24.svg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="get-started-link-section dark">
+          <div class="container text-center text-lg-left">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-lg-6 mb-5 mb-lg-0">
+                <h2 class="text-white">
+                  Bring Real-Time Data from Any Source into your Warehouse
+                </h2>
+              </div>
+              <div class="col-lg-6 col-sm-10 mt-lg-4">
+                <form class="free-trial-form input-group-stacked-btn-wrapper invalid" novalidate="" autocomplete="off"
+                  data-section="Bottom Banner" data-product="pipeline" data-hs-cf-bound="true" data-factors-bind="true">
+                  <input type="hidden" name="csrfmiddlewaretoken"
+                    value="FfGm8BulrXhryllkwLmjiO52rH98wiQipsESmT4p6p74YDMXJJsD0QOr2ByB0Q81">
+                  <div class="input-group">
+                    <input name="email" type="email" class="form-control form-control-sm input-tooltip invalid"
+                      placeholder="name@company.com" aria-label="name@company.com" required="">
+                    <div class="input-group-append">
+                      <span class="DataPAI-web-icon DataPAI-error-circle input-group-glyph form-error-glyph"
+                        data-placement="bottom" data-form-error-tooltip="email"
+                        data-default-error-title="Please enter your business email : <span class='font-weight-semi-bold'>name@company.com</span>">
+                      </span>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-sm stacked-btn trial-button"
+                    data-factors-bind="true">
+                    <span class="btn-main-body">
+                      Get Started for Free
+                    </span>
+                    <img class="btn-loading-indicator"
+                      src="https://res.cloudinary.com/Hevo/image/upload/v1650395517/Hevo-website/loaders/btn-secondary-loading_dsw2wj.svg">
+                  </button>
+                </form>
+                <a href="/request-demo/" class="btn btn-link btn-thumb font-weight-bold mt-3"
+                  data-track-click="Talk to a Product Expert" data-track-category="Bottom Banner">
+                  <span>Talk to a Product Expert</span> <span class="DataPAI-web-icon DataPAI-right ml-2"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="skewed-bg-container">
+            <img id="abstract_footer_right" class="skewed d-none d-md-inline"
+              src="https://res.cloudinary.com/Hevo/image/upload/v1650456429/abstract-bg/footer-abstract_uiltdl.svg"
+              alt="">
+          </div>
+        </section>
+      </div>
+      <hr class="featurette-divider" class="featurette">
+      <!-- FOOTER -->
+      <%- include('_footer')%>
+    </main>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+      integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+      crossorigin="anonymous"></script>
+    <script src="/js/codepai.js"></script>
+  </body>
+
+</html>
