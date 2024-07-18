@@ -83,7 +83,7 @@ app.post('/register', (req, res) => {
   });
 });
 
-app.listen(port, () => console.log(`DataPai PAI listening on port ${port}!`));
+app.listen(port, () => console.log(`DataPai PAI listening on http://127.0.0.1:${port}!`));
 
 async function sendEmail(payload, subject, next) {
   try{

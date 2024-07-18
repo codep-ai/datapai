@@ -63,6 +63,37 @@ body {
   width: 5%;
 }
 
+/* Navbar button change
+--------------------------*/
+.form-inline .btn-green {
+  background-color: darkseagreen;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+.form-inline .btn-green:hover {
+  background-color: darkolivegreen;
+}
+
+.form-inline .btn-darkgreen{
+  color: darkseagreen;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+.form-inline .btn-darkgreen:hover{
+  background-color: darkseagreen;
+}
+
+.form-inline .btn{
+  margin-left: 70px;
+}
+
+
 /* Featurettes
 ------------------------- */
 
