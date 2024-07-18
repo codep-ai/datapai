@@ -1,13 +1,16 @@
 const express = require('express')
 const path = require('path');
 const app = express();
-var bodyParser = require('body-parser');
+let bodyParser = require('body-parser');
 const port = 3000
 const nodemailer = require('nodemailer');
+const { google } = require("googleapis");
+
+// It should add OAuth2client Id, key and Token
 const emailClientId = '';
 const emailClientKey = '';
 const emailRefreshToken = '';
-const { google } = require("googleapis");
+
 const OAuth2 = google.auth.OAuth2;
 const oauth2Client = new OAuth2(
   emailClientId,
@@ -83,14 +86,15 @@ app.post('/register', (req, res) => {
 app.listen(port, () => console.log(`DataPai PAI listening on port ${port}!`));
 
 async function sendEmail(payload, subject, next) {
-  const tokens = await oauth2Client.refreshAccessToken()
-  const accessToken = tokens.credentials.access_token
+  try{
+  const tokens = await oauth2Client.getAccessToken();
+  const accessToken = tokens.token;
 
   const smtpTransport = nodemailer.createTransport({
     service: "gmail",
     auth: {
          type: "OAuth2",
-         user: "betopsoft@gmail.com", 
+         user: "betopsoft@gmail.com",
          clientId: emailClientId,
          clientSecret: emailClientKey,
          refreshToken: emailRefreshToken,
@@ -98,13 +102,13 @@ async function sendEmail(payload, subject, next) {
     }
 });
 
-  var mailOptions = {
+  const mailOptions = {
     from: 'customer@codepai.com.au',
     to: 'info@datap.ai',
     subject: subject,
     html: JSON.stringify(payload)
   };
-  
+
   smtpTransport.sendMail(mailOptions, function(error, info){
     if (error) {
       console.log(error);
@@ -114,4 +118,8 @@ async function sendEmail(payload, subject, next) {
     smtpTransport.close();
     next();
   });
+} catch (error) {
+    console.log('Error sending email', error);
+    next(error);
+  }
 }
