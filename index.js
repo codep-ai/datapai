@@ -43,17 +43,17 @@ app.get('/ourteam', (req, res) => {
   res.render('ourteam')
 });
 
-app.get('/pricing', (req, res) => {
-  res.render('pricing')
-});
+// app.get('/pricing', (req, res) => {
+//   res.render('pricing')
+// });
 
 app.get('/register', (req, res) => {
   res.render('register')
 });
 
-app.get('/company', (req, res) => {
-  res.render('company')
-});
+// app.get('/company', (req, res) => {
+//   res.render('company')
+// });
 
 app.get('/products', (req, res) => {
   res.render('products')
