@@ -219,9 +219,13 @@ body {
   margin: 20px;
 }
 
-.nav-item a {
-  text-decoration: underline !important;
-  color: rgba(0,0,0,.8) !important;
+/*.nav-item a {*/
+/*  text-decoration: underline !important;*/
+/*  color: rgba(0,0,0,.8) !important;*/
+/*}*/
+
+.nav-item .active{
+  color: darkseagreen !important;
 }
 
 .gallery-item {

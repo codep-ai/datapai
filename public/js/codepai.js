@@ -106,4 +106,10 @@ $(document).ready(function() {
     });
   });
 
+  const path = window.location.pathname;
+  $('.nav-item .nav-link').each(function() {
+    if ($(this).attr('href') === path) {
+      $(this).addClass('active');
+    }
+  });
 });
