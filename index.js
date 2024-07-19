@@ -43,17 +43,17 @@ app.get('/ourteam', (req, res) => {
   res.render('ourteam')
 });
 
-app.get('/pricing', (req, res) => {
-  res.render('pricing')
-});
+// app.get('/pricing', (req, res) => {
+//   res.render('pricing')
+// });
 
 app.get('/register', (req, res) => {
   res.render('register')
 });
 
-app.get('/company', (req, res) => {
-  res.render('company')
-});
+// app.get('/company', (req, res) => {
+//   res.render('company')
+// });
 
 app.get('/products', (req, res) => {
   res.render('products')
@@ -83,7 +83,7 @@ app.post('/register', (req, res) => {
   });
 });
 
-app.listen(port, () => console.log(`DataPai PAI listening on port ${port}!`));
+app.listen(port, () => console.log(`DataPai PAI listening on http://127.0.0.1:${port}!`));
 
 async function sendEmail(payload, subject, next) {
   try{
