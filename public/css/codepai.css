@@ -41,10 +41,10 @@ body {
   bottom: -40px;
 }
 .carousel-indicators li {
-  background-color: darkseagreen;
+  background-color: darkolivegreen;
 }
 .carousel-indicators .active {
-  background-color: darkolivegreen;
+  background-color: darkseagreen;
 }
 .carousel-control-prev-icon {
   background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="darkolivegreen" viewBox="0 0 8 8"%3E%3Cpath d="M4.146 0L0 4.5 4.146 8l.708-.707L1.707 4.5l3.147-3.293L4.146 0z"/%3E%3C/svg%3E');
@@ -53,7 +53,7 @@ body {
 }
 
 .carousel-control-next-icon {
-  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="darkolivegreen" viewBox="0 0 8 8"%3E%3Cpath d="M3.854 0L8 4.5 3.854 8l-.708-.707L6.293 4.5 3.146 1.207 3.854 0z"/%3E%3C/svg%3E');
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="darkseagreen" viewBox="0 0 8 8"%3E%3Cpath d="M3.854 0L8 4.5 3.854 8l-.708-.707L6.293 4.5 3.146 1.207 3.854 0z"/%3E%3C/svg%3E');
   width: 30px;
   height: 30px;
 }
