@@ -112,4 +112,6 @@ $(document).ready(function() {
       $(this).addClass('active');
     }
   });
+
+  $('#carouselExampleIndicators').carousel();
 });
