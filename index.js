@@ -62,6 +62,10 @@ app.get('/products', (req, res) => {
 app.get('/genai', (req, res) => {
   res.render('genai')
 });
+
+app.get('/services', (req, res) => {
+  res.render('services')
+});
 /*
 app.get('/resources', (req, res) => {
   res.render('resources')

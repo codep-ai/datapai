@@ -306,6 +306,7 @@ body {
   max-height: 100%;
   width: 80%;
   height: 100%;
+  margin-top: 50px;
   border: none;
   box-shadow: 0 1.25em 2em -1.5em rgba(0, 0, 0, 0.15);
   border-radius: 10px;
@@ -313,7 +314,19 @@ body {
   object-fit: cover
 }
 
+/*services
+---------------*/
 
+.service_section_2{
+  padding-bottom: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.service_section_2 img{
+  height: 200px;
+  width: 200px;
+}
 
 
 

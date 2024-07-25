@@ -9,11 +9,14 @@
         <%- include('_menu') %>
     </header>
 
-    <div class="hero-section">
+    <div class="hero-section text-center">
         <div class="text-section">
-            <h2>GENERATIVE AI SERVICES</h2>
-            <h1>Unlock the full potential of</h1>
-            <h1><span>Generative AI</span> with DatapAI</h1>
+            <div>
+                <h2 class="intro-header__title text-white">Generative AI with DataPAI</h2>
+            </div>
+            <div>
+                <p class="lead-lg intro-header__lead text-black-60">Using GenAI with DataPAI's data integration capabilities breaks down data silos, boosts efficiency, cuts costs, increases revenue, and empowers users with actionable insights.</p>
+            </div>
             <a class="btn btn-primary" href="https://platform.datap.ai/genai">Get Start</a>
         </div>
         <div class="image-section">
@@ -55,9 +58,9 @@
     <div class="gif-section">
         <div class="container">
             <h2>Let's Run Through an Example</h2>
-            <p>This demo showcases an IT Chat Assistant powered by LLM and RAG. When a user asks a question, the AI utilizes an API that inputs the question along with information from the dbt data model. The dbt data model provides ChatGPT with details about specific fields in the data and their meanings. This approach to prompt engineering helps guide ChatGPT to identify which fields are relevant to the user's question.</p>
-            <br>
-            <p>Currently, the number of tables and columns in the database that the model can handle is limited by the number of tokens the model can use. As ChatGPT continues to evolve with more tokens available for input, it will be able to handle larger database models, enhancing its capability to provide more comprehensive and accurate responses.</p>
+            <p>
+                This demo showcases an IT Chat Assistant powered by LLMs and RAG. DataAI offer end-2-end data pipelines to ingest 300+ difference source connections and transform data into different cloud distinations, data warehouses like Snowflake, BigQuery Redshift, or Sqllite3 and DuckDB. When a user asks a question from any of these distinations, the AI utilizes an API that inputs the question along with information from the dataPAI data models. The DataPAI platform provides OpenAI with details about specific fields in the data and their meanings. This approach to prompt engineering helps guide OpenAI to identify which fields are relevant to the user's question.
+            </p>
             <img src="./images/demo_image.png" alt="Demonstration" class="img-fluid">
         </div>
     </div>
