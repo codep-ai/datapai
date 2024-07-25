@@ -71,7 +71,7 @@ body {
   border: none;
   border-radius: 10px;
   padding: 10px 20px;
-  margin-left: 10px;
+  margin-left: 30px;
   transition: background-color 0.3s;
 }
 .form-inline .btn-green:hover {
@@ -82,15 +82,16 @@ body {
   color: darkseagreen;
   border-radius: 10px;
   padding: 10px 20px;
-  margin-left: 10px;
+  margin-left: 50px;
   transition: background-color 0.3s;
 }
 .form-inline .btn-darkgreen:hover{
   background-color: darkseagreen;
 }
 
-.form-inline .btn{
-  margin-left: 70px;
+.form-inline {
+  flex-flow: row wrap;
+  flex-wrap: nowrap !important;
 }
 
 
@@ -218,6 +219,116 @@ body {
   width: 400px;
   margin: 20px;
 }
+/* genai part
+-------------------------------*/
+.hero-section {
+  background-color: #b3daa0;
+  color: #fff;
+  padding-top: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-section .text-section {
+  flex: 0.5;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+.hero-section .image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+.hero-section p {
+  font-size: 1.2em;
+}
+.btn-primary {
+  background-color: #4db6ac;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #3a9284;
+}
+.section {
+  padding: 60px 0;
+}
+.section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.section p {
+  font-size: 1.1em;
+}
+.hero-section span{
+  color: darkolivegreen;
+}
+
+.card-body {
+  padding: 30px 15px;
+  text-align: center;
+  background-color: #ffffff;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 0px rgb(72, 73, 121, 0.15);
+  transition: all 400ms ease-out;
+  will-change: transform;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.card-text {
+  font-size: 1rem;
+}
+
+.btn.btn-primary.play{
+  background-color: darkseagreen;
+  border: none;
+  box-shadow: 0 1.25em 2em -1.5em rgba(0, 0, 0, 0.15);
+  margin-bottom: 10px;
+}
+.btn.btn-primary.play:hover{
+  background-color: darkolivegreen;
+}
+.img-gif{
+  max-width: 100%;
+  max-height: 100%;
+  width: 80%;
+  height: 100%;
+  margin-top: 50px;
+  border: none;
+  box-shadow: 0 1.25em 2em -1.5em rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  transition: box-shadow .3s ease, box-shadow .3s ease;
+  object-fit: cover
+}
+
+/*services
+---------------*/
+
+.service_section_2{
+  padding-bottom: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.service_section_2 img{
+  height: 200px;
+  width: 200px;
+}
+
+
 
 /*.nav-item a {*/
 /*  text-decoration: underline !important;*/

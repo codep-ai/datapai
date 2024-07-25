@@ -58,6 +58,14 @@ app.get('/register', (req, res) => {
 app.get('/products', (req, res) => {
   res.render('products')
 });
+
+app.get('/genai', (req, res) => {
+  res.render('genai')
+});
+
+app.get('/services', (req, res) => {
+  res.render('services')
+});
 /*
 app.get('/resources', (req, res) => {
   res.render('resources')

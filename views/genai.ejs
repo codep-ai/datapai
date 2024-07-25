@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<%- include('_header') %>
+
+
+
+<body>
+    <header>
+        <%- include('_menu') %>
+    </header>
+
+    <div class="hero-section text-center">
+        <div class="text-section">
+            <div>
+                <h2 class="intro-header__title text-white">Generative AI with DataPAI</h2>
+            </div>
+            <div>
+                <p class="lead-lg intro-header__lead text-black-60">Using GenAI with DataPAI's data integration capabilities breaks down data silos, boosts efficiency, cuts costs, increases revenue, and empowers users with actionable insights.</p>
+            </div>
+            <a class="btn btn-primary" href="https://platform.datap.ai/genai">Get Start</a>
+        </div>
+        <div class="image-section">
+            <img src="../images/vanna_demo.gif" alt="Demonstration GIF" class="img-gif">
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <h2 class="pb-2 border-bottom">What DatapAI Delivers</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <img class="bi" src="../images/checklist.png" alt="strategy" height="150" width="150">
+                    </div>
+                    <h4 class="fs-2 text-body-emphasis">AI & Data Strategy</h4>
+                    <p class="card-text">AI readiness starts with sound data strategy. phData can ensure your organization is ready to make the most of your data and help create a roadmap for a successful AI adoption within 4-8 weeks.</p>
+                </div>
+
+                <div class="feature col">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <img class="bi" src="../images/software.png" alt="platform" height="150" width="150">
+                    </div>
+                    <h4 class="fs-2 text-body-emphasis">Build and operate your MLOps platform</h4>
+                    <p class="card-text">DatapAI’s ML Engineers can help design, build, and manage your AI & MLOps platform on top of Snowflake and the Modern Data Stack.</p>
+                </div>
+
+                <div class="feature col">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                        <img class="bi" src="../images/artificial-intelligence.png" alt="AI" height="150" width="150">
+                    </div>
+                    <h4 class="fs-2 text-body-emphasis">Develop AI applications</h4>
+                    <p class="card-text">Our teams of data scientists, ML engineers, data engineers, and analytics consultants have the breadth of experience necessary to advance AI initiatives at any point on the AI readiness journey.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gif-section">
+        <div class="container">
+            <h2>Let's Run Through an Example</h2>
+            <p>
+                This demo showcases an IT Chat Assistant powered by LLMs and RAG. DataAI offer end-2-end data pipelines to ingest 300+ difference source connections and transform data into different cloud distinations, data warehouses like Snowflake, BigQuery Redshift, or Sqllite3 and DuckDB. When a user asks a question from any of these distinations, the AI utilizes an API that inputs the question along with information from the dataPAI data models. The DataPAI platform provides OpenAI with details about specific fields in the data and their meanings. This approach to prompt engineering helps guide OpenAI to identify which fields are relevant to the user's question.
+            </p>
+            <img src="./images/demo_image.png" alt="Demonstration" class="img-fluid">
+        </div>
+    </div>
+
+    <div class="section bg-light">
+        <div class="container">
+            <h2>What Can You Accomplish With Generative AI?</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Personalization and Content Generation</h5>
+                            <p class="card-text">Generative AI capabilities automate or streamline content authorship and tailor messaging for individuals or curated audiences.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Document Language Processing</h5>
+                            <p class="card-text">LLMs excel at extracting insights from unstructured data. We’ve worked with our clients to build intelligent processing pipelines for documents, automating manual tasks, and yielding substantial operational savings.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Accelerate Business Processes</h5>
+                            <p class="card-text">LLMs are incredibly powerful at making decisions based on historical patterns and other relevant data.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Intelligent Assistants</h5>
+                            <p class="card-text">Context-aware chatbots are revolutionizing the way organizations support their teams and disseminate information.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Workflow Automation</h5>
+                            <p class="card-text">Generative AI is extremely powerful for automating time-consuming workflows.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--    <div class="section">-->
+<!--        <div class="container">-->
+<!--            <h2>Success Story</h2>-->
+<!--            <h3>IT Chat Assistant with LLM and RAG</h3>-->
+<!--            <p><strong>Customer's Challenge:</strong> Large fast food restaurant needed a conversational natural-language interface to service the IT needs across its network of 2,600 restaurants nationwide.</p>-->
+<!--            <p><strong>DatapAI's Solution:</strong> phData built an LLM-based chat interface by hosting open-source language models on cloud infrastructure. Retrieval-augmented Generation (RAG) was used to prevent hallucination and tailor chat responses based on enterprise-specific knowledge from IT support documentation.</p>-->
+<!--            <p><strong>Results:</strong></p>-->
+<!--            <ul>-->
+<!--                <li>Deployed multiple open-source LLMs behind a common interface for comparison and evaluation.</li>-->
+<!--                <li>Leveraged RAG to improve LLM responses based on enterprise IT knowledge base.</li>-->
+<!--                <li>30x faster resolutions for common IT questions.</li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+    <hr>
+
+<!--    <div class="section bg-light">-->
+<!--        <div class="container text-center">-->
+<!--            <h2>Take the next step with phData</h2>-->
+<!--            <p>Kickoff your AI journey by attending our complimentary Generative AI Workshop.</p>-->
+<!--            <a class="btn btn-primary" href="#">Schedule Your Free Workshop</a>-->
+<!--        </div>-->
+
+        <!-- FOOTER -->
+        <%- include('_footer')%>
+<!--    </div>-->
+    <!-- Bootstrap core JavaScript
+        ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+            integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous">
+    </script>
+    <script src="/js/codepai.js"></script>
+</body>
+</html>
