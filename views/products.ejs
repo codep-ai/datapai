@@ -1,98 +1,196 @@
 <!doctype html>
 <html lang="en">
-    <%- include('_header') %>
-    <body>
-      <header>
-        <%- include('_menu') %>
-      </header>
-  <main role="main">
-    <section class="feature-section">
-      <div class="container">
-      <!-- used in customers, affiliate program and all other page -->
-      <div class="section-heading-v3 mb-8">
-        <div class="text-water-blue title">Use Cases</div>
-          <div class="desc mt-3 mb-5"> Get the most out of your customer data by focussing on the right data points.</div>
-      </div>
-        <div class="use-cases-wrap">
-          <div class="row">
-              <div class="col-md-6 col-12 mb-7 ">
-                <div class="card resource-card use-cases-card">
-                  <div class="card-img-top">
-                    <figure class="embed-responsive use-cases-card-image-wrap mb-0">
-                      <div class="embed-responsive-item">
-                        <img class="use-cases-card-image lazyloaded" data-src="https://res.cloudinary.com/Hevo/image/upload/w_500/v1626953625/Hevo-website/activate/sync-product-data-crm_yaqzi2.png" src="https://res.cloudinary.com/Hevo/image/upload/w_500/v1626953625/Hevo-website/activate/sync-product-data-crm_yaqzi2.png">
-                      </div>
-                    </figure>
-                  </div>
-                  <div class="card-body">
-                    <h3 class="card-title">Sync Product Data into your Sales CRM</h3>
-                    <span class="card-text">Get all your product data in your CRM tool and track user activity. Bucket users based on their activity and improve product adoption. Prevent users from churning by identifying issues in adoption.  </span>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-md-6 col-12 mb-7 ">
-                <div class="card resource-card use-cases-card">
-                  <div class="card-img-top">
-                    <figure class="embed-responsive use-cases-card-image-wrap mb-0">
-                      <div class="embed-responsive-item">
-                        <img class="use-cases-card-image lazyloaded" data-src="https://res.cloudinary.com/Hevo/image/upload/w_500/v1626953625/Hevo-website/activate/customer-sync-up-sales-crm_rdhs5s.png" src="https://res.cloudinary.com/Hevo/image/upload/w_500/v1626953625/Hevo-website/activate/customer-sync-up-sales-crm_rdhs5s.png">
-                      </div>
-                    </figure>
-                  </div>
-                  <div class="card-body">
-                    <h3 class="card-title">Build 360 View of Customer and Sync-up Sales CRM</h3>
-                    <span class="card-text">Having access to siloed data from different tools in your stack which can be synced with your Sales CRM, you can understand your customers better with every vantage point.</span>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-md-6 col-12  mb-7 mb-md-0">
-                <div class="card resource-card use-cases-card">
-                  <div class="card-img-top">
-                    <figure class="embed-responsive use-cases-card-image-wrap mb-0">
-                      <div class="embed-responsive-item">
-                        <img class="use-cases-card-image ls-is-cached lazyloaded" data-src="https://res.cloudinary.com/Hevo/image/upload/w_500/v1626953625/Hevo-website/activate/create-segments-users_fnj0fv.png" src="https://res.cloudinary.com/Hevo/image/upload/w_500/v1626953625/Hevo-website/activate/create-segments-users_fnj0fv.png">
-                      </div>
-                    </figure>
-                  </div>
-                  <div class="card-body">
-                    <h3 class="card-title">Create Segments of Users and make your marketing team efficient</h3>
-                    <span class="card-text">Let your marketing team target the visitors who really matter instead of wasting time. Focus on channels which convert better and maximize your ROI.</span>
-                  </div>
-                </div>
-              </div> 
-              <div class="col-md-6 col-12  ">
-                <div class="card resource-card use-cases-card">
-                  <div class="card-img-top">
-                    <figure class="embed-responsive use-cases-card-image-wrap mb-0">
-                      <div class="embed-responsive-item">
-                        <img class="use-cases-card-image ls-is-cached lazyloaded" data-src="https://res.cloudinary.com/Hevo/image/upload/w_500/v1626953625/Hevo-website/activate/complete-customer-profile_nvnwod.png" src="https://res.cloudinary.com/Hevo/image/upload/w_500/v1626953625/Hevo-website/activate/complete-customer-profile_nvnwod.png">
-                      </div>
-                    </figure>
-                  </div>
-                  <div class="card-body">
-                    <h3 class="card-title">Create a complete customer profile to enrich your support team</h3>
-                    <span class="card-text">Help your support team to automatically prioritize tickets of your enterprise customers. You can sync all the customer data into your support software and have them respond quicker with holistic customer background.</span>
-                  </div>
-                </div>
-              </div> 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Data+AI</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #b3daa0;
+      --secondary-color: darkseagreen;
+      --text-color: #333333;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text-color);
+    }
+    .hero-section {
+      background: linear-gradient(rgba(179, 218, 160, 0.7), rgba(143, 188, 143, 0.7)), url('/api/placeholder/1920/1080');
+      background-size: cover;
+      background-position: center;
+      color: var(--text-color);
+      padding: 120px 0;
+    }
+    .feature-card {
+      border: none;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .icon-circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+    .icon-circle i {
+      font-size: 30px;
+      color: var(--text-color);
+    }
+    .btn-primary {
+      background-color: var(--secondary-color);
+      border-color: var(--secondary-color);
+      color: var(--text-color);
+      padding: 10px 25px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .btn-primary:hover {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+    .section-title {
+      position: relative;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+      color: var(--text-color);
+    }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 3px;
+      background-color: var(--secondary-color);
+    }
+    .how-it-works {
+      background-color: var(--primary-color);
+    }
+    .how-it-works img {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    .cta-section {
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    }
+    .text-primary {
+      color: var(--secondary-color) !important;
+    }
+    .data-fabric-concept {
+      border: 2px solid var(--secondary-color);
+      border-radius: 10px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  </style>
+</head>
+<%- include('_header') %>
+<body>
+<header>
+  <%- include('_menu') %>
+</header>
+
+<main role="main">
+  <section class="hero-section text-center">
+    <div class="container">
+      <h1 class="display-4 font-weight-bold mb-4">AI-Powered Data Fabric Solutions</h1>
+      <p class="lead mb-5">Unify Your Data Landscape with Intelligent, Automated Data Management</p>
+      <a href="#" class="btn btn-primary btn-lg">Explore Solutions</a>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center section-title">Key Features of Our AI-Powered Data Fabric</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card feature-card h-100">
+            <div class="card-body text-center">
+              <div class="icon-circle">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h5 class="card-title">AI-Driven Integration</h5>
+              <p class="card-text">Leverage machine learning for intelligent data integration across diverse sources.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card feature-card h-100">
+            <div class="card-body text-center">
+              <div class="icon-circle">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <h5 class="card-title">Automated Data Discovery</h5>
+              <p class="card-text">Automatically identify and catalog data assets across your entire ecosystem.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card feature-card h-100">
+            <div class="card-body text-center">
+              <div class="icon-circle">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h5 class="card-title">Intelligent Data Governance</h5>
+              <p class="card-text">Ensure compliance and security with AI-powered data governance tools.</p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- FOOTER -->
-    <%- include('_footer')%>
-  </main>
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
-    integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-    crossorigin="anonymous"></script>
-  <script src="/js/codepai.js"></script>
+    </div>
+  </section>
+
+  <section class="py-5 how-it-works">
+    <div class="container">
+      <h2 class="text-center section-title">How Our AI-Powered Data Fabric Works</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="data-fabric-concept">
+            <h4 class="mb-3">Data Fabric Concept</h4>
+            <p>Imagine a seamless, intelligent network that connects and manages all your data sources, applications, and analytics tools. Our AI-powered Data Fabric acts as this unifying layer, providing:</p>
+            <ul>
+              <li>Real-time data integration and synchronization</li>
+              <li>Automated data discovery and cataloging</li>
+              <li>Intelligent data governance and security</li>
+              <li>Seamless data access and delivery across your organization</li>
+            </ul>
+            <p>This unified approach enables faster insights, better decision-making, and enhanced data utilization across your enterprise.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <ol class="list-unstyled">
+            <li class="mb-3"><strong class="text-primary">1. Connect:</strong> Seamlessly integrate all your data sources.</li>
+            <li class="mb-3"><strong class="text-primary">2. Discover:</strong> AI automatically catalogs and classifies your data.</li>
+            <li class="mb-3"><strong class="text-primary">3. Transform:</strong> Cleanse and enrich data with machine learning algorithms.</li>
+            <li class="mb-3"><strong class="text-primary">4. Govern:</strong> Ensure compliance with intelligent data governance.</li>
+            <li><strong class="text-primary">5. Deliver:</strong> Provide unified, high-quality data to all your applications.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <%- include('_footer')%>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
