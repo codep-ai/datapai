@@ -22,6 +22,20 @@
       background-position: center;
       color: var(--text-color);
       padding: 120px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('/api/placeholder/1920/1080') no-repeat center center;
+      background-size: cover;
+      filter: blur(5px);
+      z-index: -1;
     }
     .feature-card {
       border: none;
@@ -43,6 +57,10 @@
       align-items: center;
       justify-content: center;
       margin: 0 auto 20px;
+      transition: transform 0.3s ease;
+    }
+    .feature-card:hover .icon-circle {
+      transform: scale(1.1);
     }
     .icon-circle i {
       font-size: 30px;
@@ -56,10 +74,13 @@
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 1px;
+      transition: all 0.3s ease;
     }
     .btn-primary:hover {
       background-color: var(--primary-color);
       border-color: var(--primary-color);
+      transform: translateY(-3px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
     .section-title {
       position: relative;
@@ -79,6 +100,19 @@
     }
     .how-it-works {
       background-color: var(--primary-color);
+      position: relative;
+      overflow: hidden;
+    }
+    .how-it-works::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: -50px;
+      right: -50px;
+      bottom: -50px;
+      background: url('/api/placeholder/500/500') repeat;
+      opacity: 0.1;
+      transform: rotate(45deg);
     }
     .how-it-works img {
       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -95,6 +129,20 @@
       border-radius: 10px;
       padding: 20px;
       background-color: rgba(255, 255, 255, 0.8);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .data-fabric-concept:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .animate-on-scroll.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
   </style>
 </head>
@@ -107,18 +155,18 @@
 <main role="main">
   <section class="hero-section text-center">
     <div class="container">
-      <h1 class="display-4 font-weight-bold mb-4">AI-Powered Data Fabric Solutions</h1>
-      <p class="lead mb-5">Unify Your Data Landscape with Intelligent, Automated Data Management</p>
-      <a href="#" class="btn btn-primary btn-lg">Explore Solutions</a>
+      <h1 class="display-4 font-weight-bold mb-4 animate-on-scroll">AI-Powered Data Fabric Solutions</h1>
+      <p class="lead mb-5 animate-on-scroll">Unify Your Data Landscape with Intelligent, Automated Data Management</p>
+      <a href="#" class="btn btn-primary btn-lg animate-on-scroll">Explore Solutions</a>
     </div>
   </section>
 
   <section class="py-5">
     <div class="container">
-      <h2 class="text-center section-title">Key Features of Our AI-Powered Data Fabric</h2>
+      <h2 class="text-center section-title animate-on-scroll">Key Features of Our AI-Powered Data Fabric</h2>
       <div class="row">
         <div class="col-md-4 mb-4">
-          <div class="card feature-card h-100">
+          <div class="card feature-card h-100 animate-on-scroll">
             <div class="card-body text-center">
               <div class="icon-circle">
                 <i class="fas fa-brain"></i>
@@ -129,7 +177,7 @@
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card feature-card h-100">
+          <div class="card feature-card h-100 animate-on-scroll">
             <div class="card-body text-center">
               <div class="icon-circle">
                 <i class="fas fa-project-diagram"></i>
@@ -140,7 +188,7 @@
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card feature-card h-100">
+          <div class="card feature-card h-100 animate-on-scroll">
             <div class="card-body text-center">
               <div class="icon-circle">
                 <i class="fas fa-shield-alt"></i>
@@ -156,10 +204,10 @@
 
   <section class="py-5 how-it-works">
     <div class="container">
-      <h2 class="text-center section-title">How Our AI-Powered Data Fabric Works</h2>
+      <h2 class="text-center section-title animate-on-scroll">How Our AI-Powered Data Fabric Works</h2>
       <div class="row align-items-center">
         <div class="col-md-6 mb-4 mb-md-0">
-          <div class="data-fabric-concept">
+          <div class="data-fabric-concept animate-on-scroll">
             <h4 class="mb-3">Data Fabric Concept</h4>
             <p>Imagine a seamless, intelligent network that connects and manages all your data sources, applications, and analytics tools. Our AI-powered Data Fabric acts as this unifying layer, providing:</p>
             <ul>
@@ -173,11 +221,11 @@
         </div>
         <div class="col-md-6">
           <ol class="list-unstyled">
-            <li class="mb-3"><strong class="text-primary">1. Connect:</strong> Seamlessly integrate all your data sources.</li>
-            <li class="mb-3"><strong class="text-primary">2. Discover:</strong> AI automatically catalogs and classifies your data.</li>
-            <li class="mb-3"><strong class="text-primary">3. Transform:</strong> Cleanse and enrich data with machine learning algorithms.</li>
-            <li class="mb-3"><strong class="text-primary">4. Govern:</strong> Ensure compliance with intelligent data governance.</li>
-            <li><strong class="text-primary">5. Deliver:</strong> Provide unified, high-quality data to all your applications.</li>
+            <li class="mb-3 animate-on-scroll"><strong class="text-primary">1. Connect:</strong> Seamlessly integrate all your data sources.</li>
+            <li class="mb-3 animate-on-scroll"><strong class="text-primary">2. Discover:</strong> AI automatically catalogs and classifies your data.</li>
+            <li class="mb-3 animate-on-scroll"><strong class="text-primary">3. Transform:</strong> Cleanse and enrich data with machine learning algorithms.</li>
+            <li class="mb-3 animate-on-scroll"><strong class="text-primary">4. Govern:</strong> Ensure compliance with intelligent data governance.</li>
+            <li class="animate-on-scroll"><strong class="text-primary">5. Deliver:</strong> Provide unified, high-quality data to all your applications.</li>
           </ol>
         </div>
       </div>
@@ -189,8 +237,52 @@
   <%- include('_footer')%>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // Smooth scroll
+    $('a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'));
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: target.offset().top - 100
+        }, 1000);
+      }
+    });
+
+    // Animate on scroll
+    function animateOnScroll() {
+      $('.animate-on-scroll').each(function() {
+        var elementBottom = $(this).offset().top + $(this).outerHeight();
+        var windowBottom = $(window).scrollTop() + $(window).height();
+        if (elementBottom < windowBottom) {
+          $(this).addClass('visible');
+        }
+      });
+    }
+
+    $(window).on('scroll', animateOnScroll);
+    animateOnScroll();
+
+    // Parallax effect for hero section
+    $(window).scroll(function() {
+      var scrollTop = $(this).scrollTop();
+      $('.hero-section').css('background-position', 'center ' + (scrollTop * 0.5) + 'px');
+    });
+
+    // Hover effect for feature cards
+    $('.feature-card').hover(
+            function() {
+              $(this).find('.icon-circle').css('transform', 'scale(1.1) rotate(10deg)');
+            },
+            function() {
+              $(this).find('.icon-circle').css('transform', 'scale(1) rotate(0deg)');
+            }
+    );
+  });
+</script>
 </body>
 </html>
