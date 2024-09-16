@@ -2,463 +2,291 @@
 <html lang="en">
 <%- include('_header') %>
 
-
-
 <body>
-  <header>
-    <%- include('_menu') %>
-  </header>
+<header>
+  <%- include('_menu') %>
+</header>
 
-  <main role="main">
-    <section class="jumbotron text-center" id="hero">
-      <div class="container">
-        <div class="row activate-wrapper">
+<main role="main">
+  <section class="jumbotron text-center" id="hero">
+    <div class="container">
+      <div class="row activate-wrapper">
         <div class="col-lg-6">
-          <div>
+          <div class="animate-on-scroll fade-in">
             <h1 class="intro-header__title text-white">
               Set up Reliable Data Pipelines in Minutes
             </h1>
           </div>
 
-          <div>
+          <div class="animate-on-scroll fade-in delay-1">
             <p class="lead-lg intro-header__lead text-black-60">
               DataPAI(Data+AI) is a no-code and highly intuitive data platform.
-              It loads data from many source  to your warehouse in real-time
+              It loads data from many sources to your warehouse in real-time
               for faster analytics.
             </p>
           </div>
-          <div class="feature-section-footer text-center" style="margin-top: 15px;">
+          <div class="feature-section-footer text-center animate-on-scroll fade-in delay-2" style="margin-top: 15px;">
             <a href="http://platform.datap.ai/#/" data-track-click="Explore DataPAI Data Pipeline Click"
-              data-track-category="Homepage - Reliable data pipelines Section" class="btn btn-primary btn-sm">
+               data-track-category="Homepage - Reliable data pipelines Section" class="btn btn-primary btn-lg pulse-on-hover">
               Explore DataPai Data Pipeline
             </a>
           </div>
-          <div class="mt-8">
+          <div class="mt-8 animate-on-scroll fade-in delay-3">
             <form class="free-trial-form input-group-stacked-btn-wrapper invalid" novalidate="" autocomplete="off"
-              data-section="Top Banner" data-product="" data-hs-cf-bound="true" data-factors-bind="true">
+                  data-section="Top Banner" data-product="" data-hs-cf-bound="true" data-factors-bind="true">
               <input type="hidden" name="csrfmiddlewaretoken"
-                value="iqh2HNC1mZZ4cb0lxkV6NJclw2y5pmwy2DfyV5c51rPHCtrYKi1qvLVK7WXyTUOh">
+                     value="iqh2HNC1mZZ4cb0lxkV6NJclw2y5pmwy2DfyV5c51rPHCtrYKi1qvLVK7WXyTUOh">
               <div class="input-group">
-                <input name="email" type="email" class="form-control form-control-sm input-tooltip invalid"
-                  placeholder="name@company.com" aria-label="name@company.com" required="">
+                <input name="email" type="email" class="form-control form-control-lg input-tooltip invalid"
+                       placeholder="name@company.com" aria-label="name@company.com" required="">
                 <div class="input-group-append">
-                  <span class="Hevo-web-icon Hevo-error-circle input-group-glyph form-error-glyph"
-                    data-placement="bottom" data-form-error-tooltip="email"
-                    data-default-error-title="Please enter your business email : <span class='font-weight-semi-bold'>name@company.com</span>">
-                  </span>
+                    <span class="Hevo-web-icon Hevo-error-circle input-group-glyph form-error-glyph"
+                          data-placement="bottom" data-form-error-tooltip="email"
+                          data-default-error-title="Please enter your business email : <span class='font-weight-semi-bold'>name@company.com</span>">
+                    </span>
                 </div>
               </div>
-              <button type="submit" class="btn btn-primary btn-sm stacked-btn trial-button" data-factors-bind="true">
-                <span class="btn-main-body">
-                  Get Started for Free
-                </span>
+              <button type="submit" class="btn btn-primary btn-lg stacked-btn trial-button pulse-on-hover" data-factors-bind="true">
+                  <span class="btn-main-body">
+                    Get Started for Free
+                  </span>
                 <img class="btn-loading-indicator"
-                  src="https://res.cloudinary.com/Hevo/image/upload/v1650395517/Hevo-website/loaders/btn-secondary-loading_dsw2wj.svg">
+                     src="https://res.cloudinary.com/Hevo/image/upload/v1650395517/Hevo-website/loaders/btn-secondary-loading_dsw2wj.svg">
               </button>
             </form>
           </div>
-	  <!-- Your existing span with slight modifications -->
-             <span class="watch-link" onclick="openYoutubeVideoModal('e9sttCrdD10')">
-             <span class="badge home-intro-video" data-track-click="Watch Now Video" data-track-category="Top Banner">
-             <span class="Hevo-play Hevo-web-icon mr-1"></span> Watch Now
-             </span>
-             <span class="link-text d-inline-block">Fastest and easiest way to integrate you data integration, BI and AI in cloud</span>
-             </span>
+          <span class="watch-link animate-on-scroll fade-in delay-4" onclick="openYoutubeVideoModal('e9sttCrdD10')">
+              <span class="badge home-intro-video pulse-on-hover" data-track-click="Watch Now Video" data-track-category="Top Banner">
+                <span class="Hevo-play Hevo-web-icon mr-1"></span> Watch Now
+              </span>
+              <span class="link-text d-inline-block">Fastest and easiest way to integrate your data integration, BI and AI in cloud</span>
+            </span>
 
-            <!-- Modal HTML (hidden initially) -->
-             <div id="youtubeVideoModal" style="display:none;">
-                   <div style="position: fixed; z-index: 1050; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0,0.5);">
-                   <div style="background-color: #fefefe; margin: auto; padding: 20px; border: 1px solid #888; width: 80%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); animation-name: animatetop; animation-duration: 0.4s">
-			   <!--  <span onclick="document.getElementById('youtubeVideoModal').style.display='none'" style="color: #aaaaaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span> -->
-		   <!-- Updated onclick to call closeYoutubeVideoModal -->
-                   <span onclick="closeYoutubeVideoModal()" style="color: #aaaaaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
-
-                   <iframe id="youtubeVideoIframe" width="100%" height="500" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div id="youtubeVideoModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeYoutubeVideoModal()">&times;</span>
+              <iframe id="youtubeVideoIframe" width="100%" height="500" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
-       </div>
-
-       <script>
-        function openYoutubeVideoModal(videoId) {
-          var modal = document.getElementById('youtubeVideoModal');
-          var iframe = document.getElementById('youtubeVideoIframe');
-          iframe.src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
-          modal.style.display = "block";
-         }
-       // This function is new or modified to include stopping the video
-        function closeYoutubeVideoModal() {
-          var modal = document.getElementById('youtubeVideoModal');
-          var iframe = document.getElementById('youtubeVideoIframe');
-          iframe.src = ""; // Clears the iframe source to stop the video
-          modal.style.display = "none";
-        }
-
-        </script>
-
-
         </div>
         <div class="col-lg-6 d-flex align-items-center">
-		<!-- <img class="featurette-image img-fluid mx-auto" src="/images/datapai-logo.png" alt="datapai logo" style="width:400px;height:400px"> -->
-		 <img class="gif mx-auto" src="/images/AWS-end-2-end.gif" alt="datapai data flow" style="width:1000px;height:400px">
-
-    <script>
-        // JavaScript code to change the class and optionally the src attribute
-        var imgElement = document.querySelector('.featurette-image.img-fluid.mx-auto');
-
-        if (imgElement) {
-            imgElement.className = 'gif'; // Change class to 'gif'
-            imgElement.src = '/images/AWS-end-2-end.gif'; // Change src to the path of your GIF file
-        } else {
-            console.error('Image element not found');
-        }
-    </script>
-
+          <img class="gif mx-auto animate-on-scroll fade-in delay-5" src="/images/AWS-end-2-end.gif" alt="datapai data flow" style="width:100%;height:auto">
         </div>
       </div>
+    </div>
+  </section>
+
+  <div class="container marketing" style="margin-top:20px;">
+    <div class="row">
+      <div class="col-lg-3 animate-on-scroll fade-in">
+        <a href="http://platform.datap.ai/#/pipeline" class="feature-link">
+          <div class="feature1 feature-item" alt="Generic placeholder image"></div>
+          <h2>Data Integration(DI)</h2>
+        </a>
       </div>
-    </section>
+      <div class="col-lg-3 animate-on-scroll fade-in delay-1">
+        <a href="http://platform.datap.ai/#/bi" class="feature-link">
+          <div class="feature2 feature-item" alt="Generic placeholder image"></div>
+          <h2>Business Intelligence(BI)</h2>
+        </a>
+      </div>
+      <div class="col-lg-3 animate-on-scroll fade-in delay-2">
+        <a href="http://platform.datap.ai/#/insight" class="feature-link">
+          <div class="feature3 feature-item" alt="Generic placeholder image"></div>
+          <h2>Artificial Intelligence(AI)</h2>
+        </a>
+      </div>
+      <div class="col-lg-3 animate-on-scroll fade-in delay-3">
+        <a href="http://platform.datap.ai/#/" class="feature-link">
+          <div class="feature1 feature-item" alt="Generic placeholder image"></div>
+          <h2>Continuous Integration(CI)</h2>
+        </a>
+      </div>
     </div>
 
+    <hr class="featurette-divider">
 
-    <!-- Marketing messaging and featurettes
-      ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing" style="margin-top:20px;">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-3">
-          <a href="http://platform.datap.ai/#/pipeline">
-            <div class="feature1 feature-item" alt="Generic placeholder image"></div>
-            <h2>Data Integration(DI)</h2>
-          </a>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-3">
-          <a href="http://platform.datap.ai/#/bi">
-            <div class="feature2 feature-item" alt="Generic placeholder image"></div>
-            <h2>Business Intelligence(BI)</h2>
-          </a>
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col-lg-3">
-          <a href="http://platform.datap.ai/#/insight">
-            <div class="feature3 feature-item" alt="Generic placeholder image"></div>
-            <h2>Artificial Intelligence(AI)</h2>
-          </a>
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col-lg-3">
-          <a href="http://platform.datap.ai/#/">
-            <div class="feature1 feature-item" alt="Generic placeholder image"></div>
-            <h2>Continuous Integration(CI)</h2>
-          </a>
-        </div>
-      </div><!-- /.row -->
-
-      <!-- START THE FEATURETTES -->
-      <hr class="featurette-divider">
-
-
-
-      <section id="integrations_feature_section" class="feature-section">
-        <div class="container">
-          <h2 class="text-water-blue">
+    <section id="integrations_feature_section" class="feature-section">
+      <div class="container">
+        <h2 class="text-water-blue animate-on-scroll fade-in">
             <span class="text">
               Pre-built integrations to 100+ data sources
             </span>
-          </h2>
-          <div>
-            <p class="text-center feature-lead feature-lead-bordered">
-              DataPAI(Data+AI) supports 100+ ready-to-use integrations across Databases, SaaS Applications, Cloud Storage,
-              SDKs
-              and Streaming Services. Effortlessly connect any source and analyze data across various data formats.
-            </p>
-          </div>
-          <div class="large-screen" style="text-align: center !important;">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <!-- <img src="/images/buddy.png" style="height:600px"> -->
-                  <img class="d-block w-100" src="/images/intergrations01 (970 x 406 px).png" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                  <!-- <img src="/images/course.png" style="height:600px"> -->
-                  <img class="d-block w-100" src="/images/intergrations02 (970 x 406 px).png" alt="Second slide">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-
-      <hr class="featurette-divider">
-
-
-      <section class="feature-section" id="feature_section_activate_section">
-        <div class="container">
-          <div class="row activate-wrapper">
-            <div class="col-lg-6">
-              <span class="badge activate-badge text-white font-weight-bold mb-5 text-uppercase">
-                Newly Launched
-              </span>
-
-              <div class="activate-title">
-                Reverse ETL - Send data from Warehouse to your Business Applications
-              </div>
-
-              <p class="activate-desc mt-3 mb-3">
-                Make data and insights in your Warehouse Actionable using
-                <span class="font-weight-semi-bold">DataPAI(Data+AI) Activate (Reverse ETL)</span>.
-              </p>
-
-              <ul class="list-unstyled Hevo-check-list text-center text-lg-left">
-                <li class="mb-2">
-                  <span class="Hevo-web-icon Hevo-check text-water-blue mr-2"></span>
-                  Send Product usage data into your Sales CRM.
-                </li>
-
-                <li class="mb-2">
-                  <span class="Hevo-web-icon Hevo-check text-water-blue mr-2"></span>
-                  Build 360-degree customer profiles in your CRM for your sales team.
-                </li>
-
-                <li class="mb-2">
-                  <span class="Hevo-web-icon Hevo-check text-water-blue mr-2"></span>
-                  Enable support teams see holistic customer profile within Helpdesk software.
-                </li>
-              </ul>
-
-              <div class="text-capitalize pt-5">
-                <a href="/activate/" data-track-click="Explore Activate Click"
-                  data-track-category="Homepage - Activate Section"
-                  class="btn btn-primary btn-sm font-weight-bold mr-0 mr-sm-5 d-block d-sm-inline-block">
-                  Explore Activate
-                </a>
-                <a href="/activate/signup/?step=email" data-track-click="Try Activate For Free Click"
-                  data-track-category="Homepage - Activate Section"
-                  class="btn btn-outline-primary btn-sm font-weight-bold d-block d-sm-inline-block mt-5 mt-sm-0">
-                  Try Activate For Free
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-6 d-flex align-items-center">
-              <img class="featurette-image img-fluid mx-auto" height="400" width="400" src="/images/datapai-logo.png"
-                alt="Code to Play Adventure">
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <hr class="featurette-divider" style="margin-bottom: 0rem;">
-
-      <div class="row featurette">
-        <div class="container">
-          <h2 class="featurette-heading">
-            <span>Fully Automated and Reliable Data Pipelines for Faster Analytics </span>
-          </h2>
-
-          <p class="lead">
-            DataPAI's fully managed and automated data pipeline loads all your data to the warehouse at scale in
-            real-time, ready for analysis.
+        </h2>
+        <div>
+          <p class="text-center feature-lead feature-lead-bordered animate-on-scroll fade-in delay-1">
+            DataPAI(Data+AI) supports 100+ ready-to-use integrations across Databases, SaaS Applications, Cloud Storage,
+            SDKs and Streaming Services. Effortlessly connect any source and analyze data across various data formats.
           </p>
-
-          <div class="Hevo-usage-card-deck">
-            <div class="row">
-
-              <div class="col-lg-4 col-sm-6 col-12 Hevo-usage-card">
-                <figure class="card-icon mb-0 mx-auto mx-md-0">
-                  <span class="Hevo-web-icon Hevo-easy-setup"></span>
-                </figure>
-                <h3 class="title text-dusk my-3">Super Easy to Setup</h3>
-                <p class="mb-3">Using DataPAI's no-code and highly intuitive interface, you can set up a pipeline in
-                  minutes effortlessly in just a few clicks.</p>
+        </div>
+        <div class="large-screen animate-on-scroll fade-in delay-2" style="text-align: center !important;">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="/images/intergrations01 (970 x 406 px).png" alt="First slide">
               </div>
-
-              <div class="col-lg-4 col-sm-6 col-12 Hevo-usage-card">
-                <figure class="card-icon mb-0 mx-auto mx-md-0">
-                  <span class="Hevo-web-icon Hevo-code"></span>
-                </figure>
-                <h3 class="title text-dusk my-3">Zero Engineering</h3>
-                <p class="mb-3">Anyone with SQL skill in your data team can set up a data pipeline and run transformation on DataPAI. It saves your
-                  engineering hours for the core product.</p>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/images/intergrations02 (970 x 406 px).png" alt="Second slide">
               </div>
-
-              <div class="col-lg-4 col-sm-6 col-12 Hevo-usage-card">
-                <figure class="card-icon mb-0 mx-auto mx-md-0">
-                  <span class="Hevo-web-icon Hevo-maintenance"></span>
-                </figure>
-                <h3 class="title text-dusk my-3">Zero Maintenance</h3>
-                <p class="mb-3">Set up once and DataPAI manages all your pipeline operations and future changes
-                  automatically. Leave behind ETL scripts and Cron jobs.</p>
-              </div>
-
-              <div class="col-lg-4 col-sm-6 col-12 Hevo-usage-card">
-                <figure class="card-icon mb-0 mx-auto mx-md-0">
-                  <span class="Hevo-web-icon Hevo-warning"></span>
-                </figure>
-                <h3 class="title text-dusk my-3">Fault-Tolerant</h3>
-                <p class="mb-3">DataPAI automatically detects any anomaly in the incoming data and notifies you
-                  instantly. Further, any affected records within the pipelines are set aside for corrections,
-                  ensuring your analytics workflows are never impacted.</p>
-              </div>
-
-              <div class="col-lg-4 col-sm-6 col-12 Hevo-usage-card">
-                <figure class="card-icon mb-0 mx-auto mx-md-0">
-                  <span class="Hevo-web-icon Hevo-chart"></span>
-                </figure>
-                <h3 class="title text-dusk my-3">Analytics Ready Data</h3>
-                <p class="mb-3">DataPAI has in-built data formatting and transformation capabilities. It automatically
-                  prepares your data for analytics in minutes.</p>
-              </div>
-
-              <div class="col-lg-4 col-sm-6 col-12 Hevo-usage-card">
-                <figure class="card-icon mb-0 mx-auto mx-md-0">
-                  <span class="Hevo-web-icon Hevo-scale"></span>
-                </figure>
-                <h3 class="title text-dusk my-3">Built To Scale</h3>
-                <p class="mb-3">DataPAI is built to handle millions of records per minute without latency, ensuring
-                  your data pipelines scale as your business grows.</p>
-              </div>
-
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
       </div>
-      <hr class="featurette-divider" class="featurette">
-      <div class="row featurette">
-        <section class="feature-section">
-          <h2 class="text-water-blue">
-            <span>Read Our Resources on Building Efficient Modern Data Stack</span>
-          </h2>
-          <p class="feature-lead text-center">
-            Discover best practices, tutorials and in-depth guides around data warehouses, building data pipelines,
-            ETL
-            processes, and more.
-          </p>
-          <div class="row justify-content-center">
-            <div class="col-md-6 col-lg-4 resource-card-wrapper">
-              <div class="card resource-card" data-category="resource_guide" data-content-type="e_book" data-id="31">
+    </section>
 
-                <div class="card-img-top">
-                  <span class="badge webinar-badge">
-                    Whitepaper
-                  </span>
-                  <img
-                    data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_400/v1/Hevo-website/knowledge-base/featured-image/8578991a82044826a644001e7ff457fa_cxt2le"
-                    class="cloudinary-image lazyloaded" alt="data-pipelines-guide-to-make-the-build-vs-buy-dec"
-                    width="400"
-                    src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_400/v1/Hevo-website/knowledge-base/featured-image/8578991a82044826a644001e7ff457fa_cxt2le">
-                </div>
-                <div class="card-body">
-                  <h3 class="card-title">Should you build or buy a data pipeline?</h3>
-                  <span class="card-text">Explore the factors that drive the build vs buy decision for data
-                    pipelines</span>
-                </div>
-                <div class="card-footer">
-                  <button type="button" class="btn btn-link btn-thumb">
-                    <span class="Hevo-web-icon Hevo-resources mr-2"></span>
-                    <span>Read More</span>
-                  </button>
-                </div>
+    <hr class="featurette-divider">
 
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 resource-card-wrapper">
-              <div class="card resource-card" data-category="resource_guide" data-content-type="e_book" data-id="32">
+    <!-- Rest of the content... -->
 
-                <div class="card-img-top">
-                  <span class="badge webinar-badge">
-                    Whitepaper
-                  </span>
-                  <img
-                    data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_400/v1/Hevo-website/knowledge-base/featured-image/dd62a6d00753437fbd74ee63a2e43474_zetqlg"
-                    class="cloudinary-image lazyloaded" alt="how-to-optimize-the-performance-of-snowflake" width="400"
-                    src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_400/v1/Hevo-website/knowledge-base/featured-image/dd62a6d00753437fbd74ee63a2e43474_zetqlg">
-                </div>
-                <div class="card-body">
-                  <h3 class="card-title">Guide to evaluate data pipeline solutions</h3>
-                  <span class="card-text">Learn 10 key factors to consider while selecting the right data pipeline for
-                    your requirements</span>
-                </div>
+  </div>
 
-                <div class="card-footer">
-                  <button type="button" class="btn btn-link btn-thumb">
-                    <span class="Hevo-web-icon Hevo-resources mr-2"></span>
-                    <span>Read More</span>
-                  </button>
-                </div>
+  <%- include('_footer')%>
+</main>
 
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 resource-card-wrapper">
-              <div class="card resource-card" data-category="resource_guide" data-content-type="e_book" data-id="33">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+<script src="/js/codepai.js"></script>
 
-                <div class="card-img-top">
-                  <span class="badge webinar-badge">
-                    Whitepaper
-                  </span>
-                  <img
-                    data-src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_400/v1/Hevo-website/knowledge-base/featured-image/d8144a664dda47a899ac143451cc71cf_jwprtw"
-                    class="cloudinary-image lazyloaded" alt="critical-factors-for-a-scalable-data-pipeline-solu"
-                    width="400"
-                    src="https://res.cloudinary.com/Hevo/image/upload/f_auto,q_auto,w_400/v1/Hevo-website/knowledge-base/featured-image/d8144a664dda47a899ac143451cc71cf_jwprtw">
-                </div>
+<script>
+  $(document).ready(function() {
+    // Smooth scroll
+    $('a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'));
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: target.offset().top - 100
+        }, 1000);
+      }
+    });
 
-                <div class="card-body">
-                  <h3 class="card-title">Critical factors for a scalable data pipeline solution</h3>
-                  <span class="card-text">Explore the critical factors to consider while building scalable data
-                    pipeline
-                    solution</span>
-                </div>
+    // Animate on scroll
+    function animateOnScroll() {
+      $('.animate-on-scroll').each(function() {
+        var elementBottom = $(this).offset().top + $(this).outerHeight();
+        var windowBottom = $(window).scrollTop() + $(window).height();
+        if (elementBottom < windowBottom) {
+          $(this).addClass('visible');
+        }
+      });
+    }
 
-                <div class="card-footer">
-                  <button type="button" class="btn btn-link btn-thumb">
-                    <span class="Hevo-web-icon Hevo-resources mr-2"></span>
-                    <span>Read More</span>
-                  </button>
-                </div>
+    $(window).on('scroll', animateOnScroll);
+    animateOnScroll();
 
-              </div>
-            </div>
-          </div>
-        </section>
-      </div><!-- end of section -->
+    // Pulse animation on hover
+    $('.pulse-on-hover').hover(
+            function() { $(this).addClass('pulse'); },
+            function() { $(this).removeClass('pulse'); }
+    );
 
-    </div><!-- /.container -->
+    // Feature item hover effect
+    $('.feature-link').hover(
+            function() { $(this).find('.feature-item').addClass('feature-hover'); },
+            function() { $(this).find('.feature-item').removeClass('feature-hover'); }
+    );
+  });
 
+  function openYoutubeVideoModal(videoId) {
+    var modal = document.getElementById('youtubeVideoModal');
+    var iframe = document.getElementById('youtubeVideoIframe');
+    iframe.src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
+    modal.style.display = "block";
+  }
 
-    <!-- FOOTER -->
-    <%- include('_footer')%>
-  </main>
+  function closeYoutubeVideoModal() {
+    var modal = document.getElementById('youtubeVideoModal');
+    var iframe = document.getElementById('youtubeVideoIframe');
+    iframe.src = "";
+    modal.style.display = "none";
+  }
+</script>
 
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
-    integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous">
-  </script>
-  <script src="/js/codepai.js"></script>
+<style>
+  /* Add these styles to your existing CSS */
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .delay-1 { transition-delay: 0.2s; }
+  .delay-2 { transition-delay: 0.4s; }
+  .delay-3 { transition-delay: 0.6s; }
+  .delay-4 { transition-delay: 0.8s; }
+  .delay-5 { transition-delay: 1s; }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+
+  .pulse {
+    animation: pulse 0.5s ease-in-out;
+  }
+
+  .feature-item {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .feature-hover {
+    transform: scale(1.1);
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>
 </body>
-
 </html>
