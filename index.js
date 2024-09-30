@@ -59,6 +59,58 @@ app.get('/products', (req, res) => {
   res.render('products')
 });
 
+app.get('/products/ai-solutions', (req, res) => {
+  res.render('ai-solutions')
+});
+
+app.get('/products/data-management', (req,res) => {
+  res.render('data-management')
+});
+
+app.get('/products/analytics', (req, res) => {
+  res.render('analytics')
+});
+
+app.get('/di/benefits', (req, res) => {
+  res.render('benefits')
+});
+
+app.get('/di/use-cases', (req, res) => {
+  res.render('use-cases')
+});
+
+app.get('/di/etl', (req, res) => {
+  res.render('etl')
+});
+
+app.get('/di/data-quality', (req, res) => {
+  res.render('data-quality')
+});
+
+app.get('/di/data-catalog', (req, res) => {
+  res.render('data-catalog')
+});
+
+app.get('/di/informatica', (req, res) => {
+  res.render('informatica')
+});
+
+app.get('/di/real-time', (req, res) => {
+  res.render('real-time')
+});
+
+app.get('/di/docs', (req, res) => {
+  res.render('docs')
+});
+
+app.get('/di/tutorials', (req, res) => {
+  res.render('tutorials')
+});
+
+app.get('/di/webinars', (req, res) => {
+  res.render('webinars')
+});
+
 app.get('/genai', (req, res) => {
   res.render('genai')
 });
@@ -66,6 +118,19 @@ app.get('/genai', (req, res) => {
 app.get('/services', (req, res) => {
   res.render('services')
 });
+
+app.get('/services/consulting', (req, res) => {
+  res.render('consulting')
+});
+
+app.get('/services/implementation', (req, res) => {
+  res.render('implementation')
+});
+
+app.get('/services/training', (req, res) => {
+  res.render('training')
+});
+
 /*
 app.get('/resources', (req, res) => {
   res.render('resources')
