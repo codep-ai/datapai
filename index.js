@@ -59,6 +59,62 @@ app.get('/products', (req, res) => {
   res.render('products')
 });
 
+app.get('/demo', (req, res) => {
+  res.render('demo')
+});
+
+app.get('/products/ai-solutions', (req, res) => {
+  res.render('ai-solutions')
+});
+
+app.get('/products/data-management', (req, res) => {
+  res.render('data-management')
+});
+
+app.get('/products/analytics', (req, res) => {
+  res.render('analytics')
+});
+
+app.get('/di/benefits', (req, res) => {
+  res.render('benefits')
+});
+
+app.get('/di/use-cases', (req, res) => {
+  res.render('use-cases')
+});
+
+app.get('/di/etl', (req, res) => {
+  res.render('etl')
+});
+
+app.get('/di/data-quality', (req, res) => {
+  res.render('data-quality')
+});
+
+app.get('/di/data-catalog', (req, res) => {
+  res.render('data-catalog')
+});
+
+app.get('/di/informatica', (req, res) => {
+  res.render('informatica')
+});
+
+app.get('/di/real-time', (req, res) => {
+  res.render('real-time')
+});
+
+app.get('/di/docs', (req, res) => {
+  res.render('docs')
+});
+
+app.get('/di/tutorials', (req, res) => {
+  res.render('tutorials')
+});
+
+app.get('/di/webinars', (req, res) => {
+  res.render('webinars')
+});
+
 app.get('/genai', (req, res) => {
   res.render('genai')
 });
@@ -66,6 +122,19 @@ app.get('/genai', (req, res) => {
 app.get('/services', (req, res) => {
   res.render('services')
 });
+
+app.get('/services/consulting', (req, res) => {
+  res.render('consulting')
+});
+
+app.get('/services/implementation', (req, res) => {
+  res.render('implementation')
+});
+
+app.get('/services/training', (req, res) => {
+  res.render('training')
+});
+
 /*
 app.get('/resources', (req, res) => {
   res.render('resources')
@@ -80,13 +149,13 @@ app.get('/gallery', (req, res) => {
 });
 */
 app.post('/contact', (req, res) => {
-  sendEmail(req.body, "contact form", function() {
+  sendEmail(req.body, "contact form", function () {
     res.json(req.body);
   });
 });
 
 app.post('/register', (req, res) => {
-  sendEmail(req.body, "register form", function() {
+  sendEmail(req.body, "register form", function () {
     res.json(req.body);
   });
 });
@@ -94,39 +163,39 @@ app.post('/register', (req, res) => {
 app.listen(port, () => console.log(`DataPai PAI listening on http://127.0.0.1:${port}!`));
 
 async function sendEmail(payload, subject, next) {
-  try{
-  const tokens = await oauth2Client.getAccessToken();
-  const accessToken = tokens.token;
+  try {
+    const tokens = await oauth2Client.getAccessToken();
+    const accessToken = tokens.token;
 
-  const smtpTransport = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-         type: "OAuth2",
-         user: "betopsoft@gmail.com",
-         clientId: emailClientId,
-         clientSecret: emailClientKey,
-         refreshToken: emailRefreshToken,
-         accessToken: accessToken
-    }
-});
+    const smtpTransport = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        type: "OAuth2",
+        user: "betopsoft@gmail.com",
+        clientId: emailClientId,
+        clientSecret: emailClientKey,
+        refreshToken: emailRefreshToken,
+        accessToken: accessToken
+      }
+    });
 
-  const mailOptions = {
-    from: 'customer@codepai.com.au',
-    to: 'info@datap.ai',
-    subject: subject,
-    html: JSON.stringify(payload)
-  };
+    const mailOptions = {
+      from: 'customer@codepai.com.au',
+      to: 'info@datap.ai',
+      subject: subject,
+      html: JSON.stringify(payload)
+    };
 
-  smtpTransport.sendMail(mailOptions, function(error, info){
-    if (error) {
-      console.log(error);
-    } else {
-      console.log('Email sent: ' + info.response);
-    }
-    smtpTransport.close();
-    next();
-  });
-} catch (error) {
+    smtpTransport.sendMail(mailOptions, function (error, info) {
+      if (error) {
+        console.log(error);
+      } else {
+        console.log('Email sent: ' + info.response);
+      }
+      smtpTransport.close();
+      next();
+    });
+  } catch (error) {
     console.log('Error sending email', error);
     next(error);
   }

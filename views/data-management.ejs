@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('_header') %>
+
+    <body>
+        <header>
+            <%- include('_menu') %>
+        </header>
+
+        <main>
+            <!-- Data Management Title -->
+            <section class="text-center dm-title">
+                <div>
+                    <h1 class="animate-on-scroll">Data Management</h1>
+                    <p class="lead animate-on-scroll">
+                        DataPAI enables businesses to unlock the full potential of their data with intelligent management
+                        features.
+                    <p class="lead animate-on-scroll">By centralizing all your data in one place, our
+                        solutions streamline the entire lifecycle of
+                        data, from collection to analysis.</p>
+                    </p>
+                </div>
+            </section>
+
+            <!-- Key Features Intro -->
+            <section class="dm-intro py-5">
+                <div class="container">
+                    <div class="row text-center">
+                        <!-- Left column -->
+                        <div class="col-md-6">
+                            <h3 class="animate-on-scroll">Why DataPAI</h3>
+                            <p class="animate-on-scroll">Empower your business with DataPAI’s seamless integration,
+                                automation, and real-time insights—unlocking smarter decisions and driving sustained
+                                growth.</p>
+                            <div id="DataPAIExample" class="carousel slide animate-on-scroll">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/dag-1.png" class="d-block w-100" alt="DataPAI Dashboard"
+                                            carousel-image>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/images/dag-2.png" class="d-block w-100" alt="DataPAI Dashboard"
+                                            carousel-image>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/images/code-1.png" class="d-block w-100" alt="Data Flow"
+                                            carousel-image>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/images/trend.png" class="d-block w-100" alt="Data Trend"
+                                            carousel-image>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#DataPAIExample" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#DataPAIExample" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <!-- Right column -->
+                        <div class="col-md-6 dm-explain">
+                            <div>
+                                <ol class="list-unstyled">
+                                    <li class="mb-3 animate-on-scroll"><strong class="text-primary">1.
+                                            Integration:</strong>
+                                        DataPAI provides powerful data integration capabilities, enabling seamless
+                                        collection, cleansing, and consolidation of data from various sources.
+                                        This helps businesses break down data silos, ensuring all decisions are based on
+                                        a unified, comprehensive data view.</li>
+                                    <li class="mb-3 animate-on-scroll"><strong class="text-primary">2.
+                                            Automation:</strong> Leveraging AI, DataPAI automates data collection,
+                                        cleansing, and analysis, reducing manual effort and minimizing errors.
+                                        This allows businesses to focus on higher-level strategic tasks instead of
+                                        spending time managing complex data processes.</li>
+                                    <li class="mb-3 animate-on-scroll"><strong class="text-primary">3.
+                                            Real-Time:</strong> With DataPAI’s real-time data processing capabilities,
+                                        businesses can access up-to-the-minute analytics and reports.
+                                        Whether it’s tracking market changes or operational shifts, companies can
+                                        respond quickly and maintain a competitive edge. <a
+                                            href="/di/real-time">Discover more
+                                            about the real-time data</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <!--  -->
+            <section class="text-center demo-section">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center animate-on-scroll">
+                        <div class="col col-lg-6 bottom-left-container">
+                            <p id="first-line">Start managing all your data with DataPAI today</p>
+                            <p id="second-line">Book a demo to learn more.</p>
+                        </div>
+                        <div class="col col-lg-2">
+                            <a href="/services/consulting" class="btn btn-primary btn-lg animate-on-scroll"
+                                style="margin-bottom: 10px;">CONTACT US</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <hr>
+
+        <!-- FOOTER -->
+        <footer>
+            <%- include('_footer')%>
+        </footer>
+
+        <style>
+            header {
+                position: fixed;
+                width: 100%;
+                top: 0;
+                z-index: 1000;
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+
+            main {
+                /* Flexible box items will expand evenly to occupy the remaining space available in their parent container. */
+                flex-grow: 1;
+            }
+
+            .dm-title,
+            .demo-section {
+                background: linear-gradient(45deg, darkseagreen, seagreen);
+                background-size: cover;
+                background-position: center;
+                padding: 60px 0;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                overflow: hidden;
+            }
+
+            .dm-title h1,
+            .dm-title p {
+                color: white;
+            }
+
+            .dm-intro {
+                margin-top: 80px;
+                margin-bottom: 80px;
+            }
+
+            .dm-explain {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .animate-on-scroll {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.5s ease, transform 0.5s ease;
+            }
+
+            .animate-on-scroll.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .demo-section {
+                color: white;
+                margin-bottom: 100px;
+            }
+
+            #first-line {
+                text-align: left;
+                font-weight: 700;
+                font-size: 36px;
+            }
+
+            #second-line {
+                font-size: 24px;
+                font-weight: 600px;
+                text-align: left;
+            }
+
+            .carousel-item {
+                width: 100%;
+                height: 350px;
+                overflow: hidden;
+            }
+
+            .carousel-image {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+        </style>
+
+        <!-- Bootstrap core JavaScript -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+            integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+            crossorigin="anonymous"></script>
+        <script src="/js/codepai.js"></script>
+        <script>
+            function animateOnScroll() {
+                $('.animate-on-scroll').each(function () {
+                    var elementBottom = $(this).offset().top + $(this).outerHeight();
+                    var windowBottom = $(window).scrollTop() + $(window).height();
+                    if (elementBottom < windowBottom - 50) {
+                        $(this).addClass('visible');
+                    }
+                });
+            }
+
+            $(window).on('scroll', animateOnScroll);
+            animateOnScroll();
+        </script>
+
+    </body>
+
+</html>

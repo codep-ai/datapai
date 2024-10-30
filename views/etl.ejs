@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('_header') %>
+
+    <body>
+        <header>
+            <%- include('_menu') %>
+        </header>
+
+        <main class="flex-grow-1">
+
+
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12">
+
+                        <section class="text-center etl-title">
+                            <div class="justify-content-center">
+                                <!-- <p>What is ETL / ELT ?</p> -->
+                                <p>What is ETL / ELT ?</p>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3">
+                        <div class="sidebar">
+                            <p style="font-size: 28px; text-align: center;"><strong>Navigation</strong></p>
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#etl-section">ETL Overview</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#etl-benefits">ETL Benefits</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#elt-section">ELT Overview</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#elt-benefits">ELT Benefits</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#datap-section">How Datap Helps</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-9 col-md-10 justify-content-center align-items-center flex-column">
+
+
+                        <!-- Introduction to ETL -->
+                        <section id="etl-section" class="etl-article">
+                            <div class="animate-on-scroll">
+                                <h3 style="text-align: center;">ETL (Extract, Transform, Load)</h3>
+                                <p>ETL is a traditional data integration process used to collect data from different
+                                    sources, transform it into a consistent format, and load it into a target data
+                                    warehouse or data storage.
+                                    This method is particularly useful when organizations need to ensure data quality
+                                    and consistency before storing it for analysis.</p>
+                                <ul>
+                                    <li><strong>Extract:</strong> Data is gathered from multiple, often disparate,
+                                        sources such as databases, APIs, and spreadsheets.</li>
+                                    <li><strong>Transform:</strong> Data is cleaned, formatted, and structured to meet
+                                        business requirements. This involves filtering, joining, and applying business
+                                        logic to ensure the data is ready for analysis.</li>
+                                    <li><strong>Load:</strong> The transformed data is loaded into a target system like
+                                        a data warehouse, where it is stored and made available for reporting and
+                                        analysis.</li>
+                                </ul>
+                            </div>
+
+                            <div class="animate-on-scroll">
+                                <img class="content-images w-100" src="/images/dataSource.png" alt="Second slide">
+                            </div>
+                        </section>
+
+                        <section id="etl-benefits">
+                            <div class="animate-on-scroll">
+                                <h4 class="content-title">Why ETL is Beneficial:</h4>
+                                <ul>
+                                    <li><strong>Data Quality Control:</strong> Ensures high data quality by applying
+                                        business rules during transformation before the data is loaded into the system.
+                                    </li>
+                                    <li><strong>Optimized for Reporting:</strong> Well-suited for traditional data
+                                        warehousing where predefined reports are used regularly.</li>
+                                </ul>
+                            </div>
+
+                            <div class="animate-on-scroll">
+                                <img class="content-images w-100" src="/images/dataTransformation.png" alt="Second slide">
+                            </div>
+                        </section>
+
+
+
+                        <!-- TODO: 格式有错 -->
+                        <!-- Introduction to ELT -->
+                        <section id="elt-section">
+                            <div class="animate-on-scroll">
+
+                                <h3 class="content-title">ELT (Extract, Load, Transform)</h3>
+
+
+                                <p>ELT is a more modern approach where raw data is first loaded into a data storage
+                                    system, typically a cloud data lake or warehouse, and transformations are
+                                    performed
+                                    afterward. ELT leverages the storage and processing power of modern systems to
+                                    transform the data on demand, making it a faster and more scalable solution for
+                                    organizations handling large volumes of data.</p>
+                                <ul>
+                                    <li><strong>Extract:</strong> Similar to ETL, data is extracted from multiple
+                                        sources.</li>
+                                    <li><strong>Load:</strong> Raw data is immediately loaded into the data
+                                        warehouse or
+                                        data lake without upfront transformations.</li>
+                                    <li><strong>Transform:</strong> Once data is stored, it is transformed as needed
+                                        for
+                                        analysis using the computational power of the data warehouse, allowing
+                                        businesses to define transformations on the fly.</li>
+                                </ul>
+                            </div>
+
+                            <div class="animate-on-scroll">
+                                <img class="content-images w-100" src="/images/dbt-1.png" alt="Second slide">
+                            </div>
+
+                        </section>
+
+
+
+                        <section id="elt-benefits">
+                            <div class="animate-on-scroll">
+                                <h4 class="content-title">Why ELT is Beneficial:</h4>
+                                <ul>
+                                    <li><strong>Faster Data Availability:</strong> By loading data first, ELT
+                                        provides
+                                        faster access to raw data for analysis.</li>
+                                    <li><strong>Scalability:</strong> ELT is ideal for big data environments
+                                        where
+                                        large
+                                        volumes of data need to be processed and transformed on demand.</li>
+                                    <li><strong>Cost-Efficient:</strong> Takes advantage of cloud storage and
+                                        processing
+                                        capabilities, reducing the need for on-premise infrastructure.</li>
+                                </ul>
+                            </div>
+                            <div class="animate-on-scroll">
+                                <img class="content-images w-100" src="/images/dbt-2.png" alt="Second slide">
+                            </div>
+                        </section>
+
+                    </div>
+
+                    <!-- <div class="col-lg-1"></div> -->
+
+                    <div id="datap-etl" class="col">
+                        <section id="datap-section" class="text-center">
+                            <h2>How Datap Helps ?</h2>
+                            <div class="card-deck animate-on-scroll">
+
+                                <!-- Card 1: ETL -->
+                                <div class="card p-3">
+                                    <div class="card-body">
+
+                                        <h5 class="card-title">ETL: Streamline Your Data Flow</h5>
+                                        <p class="card-text">DataPAI ensures high data quality by transforming
+                                            and cleansing data before loading it into your data warehouse,
+                                            maintaining consistency and reliability.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Card 2: ELT -->
+                                <div class="card p-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ELT: Modern Data Processing</h5>
+                                        <p class="card-text">With ELT, DataPAI allows raw data to be loaded
+                                            directly into cloud storage, where transformations occur later,
+                                            providing scalability and fast access to large datasets.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Card 3: Efficient Data Integration -->
+                                <div class="card p-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Efficient Data Integration</h5>
+                                        <p class="card-text">DataPAI offers a comprehensive solution for
+                                            integrating
+                                            data from diverse sources such as databases, APIs, and external
+                                            files.
+                                            By automating the extraction and transformation processes, it
+                                            converts
+                                            raw data into a unified format, ensuring compatibility and
+                                            consistency.
+                                            This allows businesses to streamline their data pipeline, reducing
+                                            manual work and minimizing errors. With DataPAI, organizations can
+                                            effortlessly centralize their data in one place, enabling faster
+                                            access
+                                            to critical information for analysis and decision-making. This
+                                            efficiency ensures that businesses can respond quickly to changing
+                                            market conditions and leverage insights to drive growth.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/services/consulting" class="btn btn-primary btn-lg animate-on-scroll"
+                                style="margin-bottom: 10px;">BOOK A DEMO</a>
+                        </section>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <%- include('_footer')%>
+        </footer>
+
+        <style>
+            header {
+                position: fixed;
+                width: 100%;
+                top: 0;
+                z-index: 1000;
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+
+            main {
+                /* Flexible box items will expand evenly to occupy the remaining space available in their parent container. */
+                flex-grow: 1;
+                margin-top: 60px;
+            }
+
+            footer {
+                margin-top: 20px;
+            }
+
+            .row {
+                margin-bottom: 30px;
+                margin-right: -90px;
+            }
+
+            .etl-title {
+                background: linear-gradient(45deg, darkseagreen, seagreen);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+                align-items: center;
+                border-radius: 10px;
+                color: white;
+                margin-bottom: 20px;
+                height: 100px;
+                font-size: 38px;
+                font-weight: 700;
+            }
+
+            .etl-article {
+                margin-top: 10px;
+            }
+
+            #etl-section {
+                border-radius: 10px;
+            }
+
+            #datap-section {
+                background: linear-gradient(45deg, darkseagreen, seagreen);
+                border-radius: 10px;
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            #datap-section h2 {
+                color: white;
+            }
+
+            #etl-section,
+            #etl-benefits,
+            #elt-section,
+            #elt-benefits,
+            #datap-section {
+                scroll-margin-top: 120px;
+                padding: 10px;
+                text-align: justify;
+                /* margin: 20px; */
+            }
+
+            #datap-section .card-deck {
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                /* 确保卡片组居中 */
+                flex-wrap: wrap;
+                /* 让卡片在小屏幕上换行 */
+            }
+
+            .animate-on-scroll {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.5s ease, transform 0.5s ease;
+            }
+
+            .animate-on-scroll.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            /* For the sidebar */
+            .sidebar {
+                position: sticky;
+                top: 100px;
+                width: 200px;
+                height: 300px;
+                overflow-y: auto;
+                margin-top: 100px;
+                background: linear-gradient(45deg, darkseagreen, seagreen);
+                color: white;
+                border-radius: 10px;
+            }
+
+            .nav-link {
+                color: lightcyan;
+                transition: color 0.3s;
+                font-weight: 500px;
+            }
+
+            .nav-link:hover {
+                color: #ff6347 !important;
+                text-decoration: none;
+            }
+
+            .sidebar .nav-link.active {
+                color: #ff6347 !important;
+                font-size: large;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+
+            .content-title {
+                text-align: center;
+                margin-top: 50px;
+            }
+
+            .content-images {
+                margin-top: 30px;
+            }
+
+            #datap-etl {
+                margin: 10px;
+                max-width: 100%;
+            }
+
+            @media (max-width: 760px) {
+                .sidebar {
+                    display: none;
+                }
+
+                .mian-content {
+                    padding: 20px;
+                }
+            }
+        </style>
+
+        <!-- Bootstrap core JavaScript -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+            integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+            crossorigin="anonymous"></script>
+        <script src="/js/codepai.js"></script>
+
+        <script>
+            function animateOnScroll() {
+                $('.animate-on-scroll').each(function () {
+                    var elementBottom = $(this).offset().top + $(this).outerHeight();
+                    var windowBottom = $(window).scrollTop() + $(window).height();
+                    if (elementBottom < windowBottom) {
+                        $(this).addClass('visible');
+                    }
+                });
+            }
+
+            $(window).on('scroll', animateOnScroll);
+            animateOnScroll();
+
+            $('body').scrollspy({
+                target: '.sidebar',
+                offset: 150
+            });
+
+            // Smooth scroll for anchor links
+            $('.nav-link').on('click', function (e) {
+                if (this.hash !== "") {
+                    e.preventDefault();
+                    $('html, body').animate(
+                        { scrollTop: $(this.hash).offset().top - 100 }, 800
+                    );
+                }
+            });
+        </script>
+
+    </body>
+
+</html>
