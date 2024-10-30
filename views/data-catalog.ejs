@@ -7,7 +7,92 @@
             <%- include('_menu') %>
         </header>
 
-        <%- include('_toBeBuilt') %>
+        <main>
+
+            <section class="catalog-title">
+
+                <!-- Title -->
+                <div class="col align-items-center animate-on-scroll">
+                    <p id="title-Second-line" class="text-center">What is a Data Catalog</p>
+                    <p style="color: white;"><strong>DataPAI’s</strong> Data Catalog provides a unified platform to <br>
+                        discover, understand, and manage all your data assets with ease, ensuring accessibility and
+                        transparency across the
+                        organization.</p>
+                </div>
+            </section>
+
+            <div class="container catalog-content">
+
+                <!-- TODO: 照片加动画，文字加动画 加icon -->
+                <!-- Section 1 -->
+                <div class="row mb-5 align-items-center content-row animate-on-scroll">
+                    <div class="col-md-6 slide-in-left">
+                        <h3>Single Source of Truth</h3>
+                        <p>Find & understand data quickly with DataPAI’s search, data dictionary, business glossary,
+                            popularity metrics, lineage, and entity relationships—all in one place.</p>
+                    </div>
+                    <div class="col-md-6 slide-in-right">
+                        <img src="/images/cluster-1.png" class="img-fluid" alt="Data catalog illustration">
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div class="row mb-5 align-items-center content-row animate-on-scroll">
+                    <div class="col-md-6 order-md-2 slide-in-right">
+                        <h3>Data Lineage Tracking</h3>
+                        <p>Visualize the entire journey of your data—from its source to transformation and final
+                            destination—helping you track changes and ensure accuracy.</p>
+                    </div>
+                    <div class="col-md-6 order-md-1 slide-in-left">
+                        <img src="/images/dbt-2.png" class="img-fluid" alt="Data lineage visualization">
+                    </div>
+                </div>
+
+                <!-- Section 3 -->
+                <div class="row mb-5 align-items-center content-row animate-on-scroll">
+                    <div class="col-md-6 slide-in-left">
+                        <h3>AI-Powered Search</h3>
+                        <p>DataPAI’s AI search provides intelligent suggestions and quick access to your datasets,
+                            making it easy to locate and understand your data assets.</p>
+                    </div>
+                    <div class="col-md-6 slide-in-right">
+                        <img src="/images/ai-2.png" class="img-fluid" alt="AI-powered search illustration">
+                    </div>
+                </div>
+
+                <!-- Section 4 -->
+                <div class="row mb-5 align-items-center content-row animate-on-scroll">
+                    <div class="col-md-6 order-md-2 slide-in-right">
+                        <h3>Automated Documentation</h3>
+                        <p>Automatically generate documentation for your datasets with metadata and audit trails,
+                            ensuring all your data is well-documented and easy to access.</p>
+                    </div>
+                    <div class="col-md-6 order-md-1 slide-in-left">
+                        <img src="/images/auditLog-1.png" class="img-fluid" alt="Automated documentation">
+                    </div>
+                </div>
+
+            </div>
+
+            <section class="text-center demo-section">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center animate-on-scroll">
+                        <div class="col col-lg-6 bottom-left-container">
+                            <p id="first-line">Unlock the full potential of your data with DataPAI's comprehensive Data
+                                Catalog.</p>
+                            <p id="second-line">Book a demo to learn more.</p>
+                        </div>
+                        <div class="col col-lg-2">
+                            <a href="/services/consulting" class="btn btn-primary btn-lg animate-on-scroll"
+                                style="margin-bottom: 10px;">CONTACT US</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            </div>
+
+        </main>
 
         <!-- FOOTER -->
         <footer>
@@ -15,5 +100,159 @@
         </footer>
 
     </body>
+
+    <style>
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            /* Fullfill the whole page */
+            min-height: 100vh;
+        }
+
+        main {
+            /* Flexible box items will expand evenly to occupy the remaining space available in their parent container. */
+            flex-grow: 1;
+            margin-top: 40px;
+        }
+
+        .catalog-title {
+            background: linear-gradient(45deg, darkseagreen, seagreen);
+            background-size: cover;
+            background-position: center;
+            padding: 60px 0;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        #title-first-line {
+            font-size: 48px;
+            font-weight: 700;
+            color: white;
+            margin-left: 5px;
+            margin-bottom: 0px;
+        }
+
+        #title-Second-line {
+            font-size: 58px;
+            font-weight: 700;
+            color: white;
+            margin-left: 5px;
+            margin-bottom: 0px;
+        }
+
+        .catalog-content {
+            margin-bottom: 150px;
+        }
+
+        .content-row {
+            margin-top: 100px;
+        }
+
+        .catalog-content img {
+            height: auto;
+            max-height: 400px;
+            width: auto;
+            object-fit: contain;
+            border-radius: 18px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide-in-left {
+            transform: translateX(-100%);
+            transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+        }
+
+        .slide-in-right {
+            transform: translateX(100%);
+            transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+        }
+
+        .visible .slide-in-left {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .visible .slide-in-right {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .demo-section {
+            background: linear-gradient(45deg, darkseagreen, seagreen);
+            background-size: cover;
+            background-position: center;
+            padding: 50px 0;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            color: white;
+        }
+
+        .demo-section {
+            color: white;
+            margin-bottom: 100px;
+        }
+
+        #first-line {
+            text-align: left;
+            font-weight: 700;
+            font-size: 28px;
+        }
+
+        #second-line {
+            font-size: 22px;
+            font-weight: 600px;
+            text-align: left;
+        }
+    </style>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <script src="/js/codepai.js"></script>
+    <script>
+        function animateOnScroll() {
+            $('.animate-on-scroll').each(function () {
+                var elementBottom = $(this).offset().top + $(this).outerHeight();
+                var windowBottom = $(window).scrollTop() + $(window).height();
+                if (elementBottom < windowBottom) {
+                    $(this).addClass('visible');
+                }
+            });
+        }
+
+        $(window).on('scroll', animateOnScroll);
+        animateOnScroll();
+    </script>
+
+
 
 </html>

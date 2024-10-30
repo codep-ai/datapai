@@ -7,7 +7,114 @@
             <%- include('_menu') %>
         </header>
 
-        <%- include('_toBeBuilt') %>
+        <head>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+        </head>
+
+        <main class="flex-grow-1">
+            <section class="contact-section">
+                <div class="container my-5">
+                    <div class="row animate-on-scroll align-items-center">
+
+                        <!-- Left Section: Testimonial and Logos -->
+                        <div class="col-md-5 p-4 left-column slide-in-left">
+                            <h2>Empower Your Team with DataPAI Training</h2>
+
+                            <blockquote class="blockquote">
+                                <p>Unlock the full potential of your data operations with DataPAI’s comprehensive
+                                    training
+                                    programs. Whether you’re a data analyst, IT manager, or business professional, our
+                                    tailored sessions cover everything from mastering real-time data integration to
+                                    advanced analytics techniques. With hands-on exercises and expert guidance, you’ll
+                                    gain practical skills to streamline workflows, enhance decision-making, and maximize
+                                    the value of your data. Empower your team to stay ahead in a data-driven world with
+                                    customized training that fits your business needs and challenges.
+                                </p>
+                            </blockquote>
+
+                        </div>
+
+
+                        <!-- Right Section: Contact Form -->
+                        <div class="col-md-6 p-4 bg-light rounded right-form slide-in-right">
+                            <h2 class="text-center mb-4">Request a DataPAI demo</h2>
+                            <form>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <i class="fas fa-file-signature"></i>
+                                        <label for="firstName">First name *</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="First name"
+                                            required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <i class="fas fa-file-signature"></i>
+                                        <label for="lastName">Last name *</label>
+                                        <input type="text" class="form-control" id="lastName" placeholder="Last name"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <i class="fas fa-envelope"></i>
+                                        <label for="email">Email *</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Email"
+                                            required>
+                                    </div>
+
+                                    <!-- TODO: Add the phone number prefix plugin -->
+                                    <div class="col-md-6 mb-3">
+                                        <i class="fas fa-phone"></i>
+                                        <label for="phone">Phone number *</label>
+                                        <input type="tel" class="form-control" id="phone" placeholder="+61 / +0"
+                                            required>
+                                        <div id="phoneError" class="text-danger mt-2" style="display:none;"></div>
+                                    </div>
+
+
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <i class="fas fa-building"></i>
+                                        <label for="company">Company name *</label>
+                                        <input type="text" class="form-control" id="company" placeholder="Company name"
+                                            required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <i class="fas fa-user-md"></i>
+                                        <label for="jobRole">Job role *</label>
+                                        <select class="form-control" id="jobRole" required>
+                                            <option value="" disabled selected>Please select</option>
+                                            <option value="Customer Data Analyst">Customer Data Analyst</option>
+                                            <option value="Data Analyst">Data Analyst</option>
+                                            <option value="Data Scientist">Data Scientist</option>
+                                            <option value="Data Engineer">Data Engineer</option>
+                                            <option value="IT Manager">IT Manager</option>
+                                            <option value="Business Intelligence Specialist">Business Intelligence
+                                                Specialist</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <i class="fas fa-headphones-alt"></i>
+                                    <label for="howHeard">What you want to achieve with DataPAI?</label>
+                                    <textarea class="form-control" id="howHeard" rows="4"
+                                        placeholder="Tell us more"></textarea>
+                                </div>
+                                <!-- <button type="submit" class="btn btn-primary btn-block spinner-border"
+                                    id="submitForm">Submit</button> -->
+                                <button type="submit" class="btn btn-primary btn-block" id="submitForm">
+                                    <span class="spinner-border spinner-border-sm d-none" role="status"
+                                        aria-hidden="true"></span>
+                                    <span class="button-text">Submit</span>
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <!-- FOOTER -->
         <footer>
@@ -15,5 +122,217 @@
         </footer>
 
     </body>
+
+    <style>
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex-grow: 1;
+            margin-bottom: 100px;
+        }
+
+        .contact-section {
+            background: linear-gradient(45deg, darkseagreen, seagreen);
+            background-size: cover;
+            background-position: center;
+            padding: 80px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            overflow: hidden;
+            min-height: 100vh;
+        }
+
+        .container.my-5 {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .left-column {
+            color: white;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .form-control {
+            height: 50px;
+            padding: 10px 16px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .form-row {
+            margin-bottom: 10px;
+        }
+
+        #jobRole {
+            height: 50px;
+            padding: 10px 16px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .blockquote {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide-in-left {
+            transform: translateX(-100%);
+            transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+        }
+
+        .slide-in-right {
+            transform: translateX(100%);
+            transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+        }
+
+        .visible .slide-in-left {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .visible .slide-in-right {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    </style>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <script src="/js/codepai.js"></script>
+    <script type="text/javascript"
+        src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.1/js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
+    <script>
+
+        (function () {
+            emailjs.init("rQ1dUTVBl3S5OzEB1");
+        })();
+
+        // Validate the phone number input
+        document.getElementById('phone').addEventListener('blur', function () {
+
+            const phoneInput = $(this).val();
+            const isNumeric = /^\d+$/.test(phoneInput);
+            // const ausPhonePattern = /^(\+61|0)[2-478](\d{8})$/;
+            const ausPhonePattern = /^(\+?61|0)?4\d{8}$/;
+
+            if (!isNumeric) {
+                $('#phoneError').text('Phone number must contain only digits').show();
+            } else if (!ausPhonePattern.test(phoneInput)) {
+                $('#phoneError').text('Invalid Australian phone number format').show();
+            } else {
+                $('#phoneError').hide();
+            }
+        })
+
+        function animateOnScroll() {
+            $('.animate-on-scroll').each(function () {
+                var elementBottom = $(this).offset().top + $(this).outerHeight();
+                var windowBottom = $(window).scrollTop() + $(window).height();
+                $(this).addClass('visible');
+            });
+        }
+
+        $(window).on('scroll', animateOnScroll);
+        animateOnScroll();
+
+        // Validate the phone number input
+        document.getElementById('phone').addEventListener('blur', function () {
+
+            const phoneInput = $(this).val();
+            const isNumeric = /^\d+$/.test(phoneInput);
+            const ausPhonePattern = /^(\+61|0)[2-478](\d{8})$/;
+
+            if (!isNumeric) {
+                $('#phoneError').text('Phone number must contain only digits').show();
+            } else if (!ausPhonePattern.test(phoneInput)) {
+                $('#phoneError').text('Invalid Australian phone number format').show();
+            } else {
+                $('#phoneError').hide();
+            }
+        })
+
+        const form = document.querySelector('form');
+
+        // Handling form submit and sending email
+        document.getElementById('submitForm').addEventListener('click', function (event) {
+
+            const submitButton = document.getElementById('submitForm');
+            const buttonText = submitButton.querySelector('.button-text');
+
+            event.preventDefault();
+
+            if (!form.checkValidity()) {
+                form.reportValidity();
+
+            } else {
+
+                submitButton.disabled = true;
+                buttonText.textContent = "Submitting...";
+
+                const formParams = {
+                    first_name: document.getElementById('firstName').value,
+                    last_name: document.getElementById('lastName').value,
+                    email: document.getElementById('email').value,
+                    phone: document.getElementById('phone').value,
+                    company: document.getElementById('company').value,
+                    job_role: document.getElementById('jobRole').value,
+                    message: document.getElementById('howHeard').value,
+                };
+
+                console.log('Form data:', formParams);
+
+                emailjs.send("service_w65fx4c", "template_4vq3mjq", formParams)
+                    .then(function (response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                        alert('We have received your email! We will contact you as soon as possible ');
+                            submitButton.disabled = false;
+                            buttonText.textContent = "Submit";
+                        window.location.reload();
+                    }, function (error) {
+                        console.error('FAILED...', error);
+                        alert('Failed to send email. Please try again!');
+                    });
+            }
+        });
+
+
+    </script>
 
 </html>

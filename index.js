@@ -59,11 +59,15 @@ app.get('/products', (req, res) => {
   res.render('products')
 });
 
+app.get('/demo', (req, res) => {
+  res.render('demo')
+});
+
 app.get('/products/ai-solutions', (req, res) => {
   res.render('ai-solutions')
 });
 
-app.get('/products/data-management', (req,res) => {
+app.get('/products/data-management', (req, res) => {
   res.render('data-management')
 });
 
@@ -145,13 +149,13 @@ app.get('/gallery', (req, res) => {
 });
 */
 app.post('/contact', (req, res) => {
-  sendEmail(req.body, "contact form", function() {
+  sendEmail(req.body, "contact form", function () {
     res.json(req.body);
   });
 });
 
 app.post('/register', (req, res) => {
-  sendEmail(req.body, "register form", function() {
+  sendEmail(req.body, "register form", function () {
     res.json(req.body);
   });
 });
@@ -159,39 +163,39 @@ app.post('/register', (req, res) => {
 app.listen(port, () => console.log(`DataPai PAI listening on http://127.0.0.1:${port}!`));
 
 async function sendEmail(payload, subject, next) {
-  try{
-  const tokens = await oauth2Client.getAccessToken();
-  const accessToken = tokens.token;
+  try {
+    const tokens = await oauth2Client.getAccessToken();
+    const accessToken = tokens.token;
 
-  const smtpTransport = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-         type: "OAuth2",
-         user: "betopsoft@gmail.com",
-         clientId: emailClientId,
-         clientSecret: emailClientKey,
-         refreshToken: emailRefreshToken,
-         accessToken: accessToken
-    }
-});
+    const smtpTransport = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        type: "OAuth2",
+        user: "betopsoft@gmail.com",
+        clientId: emailClientId,
+        clientSecret: emailClientKey,
+        refreshToken: emailRefreshToken,
+        accessToken: accessToken
+      }
+    });
 
-  const mailOptions = {
-    from: 'customer@codepai.com.au',
-    to: 'info@datap.ai',
-    subject: subject,
-    html: JSON.stringify(payload)
-  };
+    const mailOptions = {
+      from: 'customer@codepai.com.au',
+      to: 'info@datap.ai',
+      subject: subject,
+      html: JSON.stringify(payload)
+    };
 
-  smtpTransport.sendMail(mailOptions, function(error, info){
-    if (error) {
-      console.log(error);
-    } else {
-      console.log('Email sent: ' + info.response);
-    }
-    smtpTransport.close();
-    next();
-  });
-} catch (error) {
+    smtpTransport.sendMail(mailOptions, function (error, info) {
+      if (error) {
+        console.log(error);
+      } else {
+        console.log('Email sent: ' + info.response);
+      }
+      smtpTransport.close();
+      next();
+    });
+  } catch (error) {
     console.log('Error sending email', error);
     next(error);
   }
