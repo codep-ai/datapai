@@ -8,8 +8,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/genai">Artificial Intelligence(AI)</a>
+                <li class="nav-item dropdown">
+                    <!-- <a class="nav-link" href="/genai">Artificial Intelligence(AI)</a> -->
+                    <a class="nav-link dropdown-toggle" href="#" id="aiDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Artificial Intelligence(AI)
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="aiDropdown">
+                        <a class="dropdown-item" href="/genai">AI</a>
+                        <a class="dropdown-item" href="/genai">Lable2</a>
+                        <a class="dropdown-item" href="/genai">Lable3</a>
+                        <a class="dropdown-item" href="/genai">Lable4</a>
+                    </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

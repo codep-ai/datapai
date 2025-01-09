@@ -2337,7 +2337,11 @@ input.btn-block[type="submit"], input.btn-block[type="reset"], input.btn-block[t
 .dropdown-menu {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: auto;
+    right: auto;
+    width: 100%;
+    top: 100%;
+    transform: none !important;
     z-index: 1000;
     display: none;
     float: left;
