@@ -8,7 +8,7 @@
 </header>
 
 <main role="main">
-  <section class="jumbotron text-center" id="hero">
+  <section class="jumbotron" id="hero">
     <div class="container">
       <div class="row activate-wrapper">
         <div class="col-lg-6">
@@ -25,13 +25,13 @@
               for faster analytics.
             </p>
           </div>
-          <div class="feature-section-footer text-center animate-on-scroll fade-in delay-2" style="margin-top: 15px;">
+          <div class="feature-section-footer animate-on-scroll fade-in delay-2">
             <a href="http://platform.datap.ai/#/" data-track-click="Explore DataPAI Data Pipeline Click"
                data-track-category="Homepage - Reliable data pipelines Section" class="btn btn-primary btn-lg pulse-on-hover">
               Explore DataPai Data Pipeline
             </a>
           </div>
-          <div class="mt-8 animate-on-scroll fade-in delay-3">
+          <div class="mt-4 animate-on-scroll fade-in delay-3">
             <form class="free-trial-form input-group-stacked-btn-wrapper invalid" novalidate="" autocomplete="off"
                   data-section="Top Banner" data-product="" data-hs-cf-bound="true" data-factors-bind="true">
               <input type="hidden" name="csrfmiddlewaretoken"
@@ -59,7 +59,8 @@
               <span class="badge home-intro-video pulse-on-hover" data-track-click="Watch Now Video" data-track-category="Top Banner">
                 <span class="Hevo-play Hevo-web-icon mr-1"></span> Watch Now
               </span>
-              <span class="link-text d-inline-block">Fastest and easiest way to integrate your data integration, BI and AI in cloud</span>
+              <!-- <span class="link-text d-inline-block">Fastest and easiest way to integrate your data integration, BI and AI in cloud</span> -->
+              <span class="link-text d-inline-block">Fastest and easiest way to integrate your Data, BI and AI in cloud</span>
             </span>
 
           <div id="youtubeVideoModal" class="modal">
@@ -114,7 +115,7 @@
             </span>
         </h2>
         <div>
-          <p class="text-center feature-lead feature-lead-bordered animate-on-scroll fade-in delay-1">
+          <p class="feature-lead feature-lead-bordered animate-on-scroll fade-in delay-1">
             DataPAI(Data+AI) supports 100+ ready-to-use integrations across Databases, SaaS Applications, Cloud Storage,
             SDKs and Streaming Services. Effortlessly connect any source and analyze data across various data formats.
           </p>
@@ -287,6 +288,75 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  #hero{
+    background: linear-gradient(45deg, seagreen, darkseagreen);
+    padding: 80px 0;
+    margin-bottom: 40px;
+    min-height: 64vh;
+  }
+
+  #hero .container {
+    display: flex;
+    gap: 20px;
+  }
+
+  #hero .col-lg-6:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 32px;
+  }
+
+  #hero .feature-section-footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #hero .mt-4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  #hero .watch-link {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+
+  .feature-section-footer .btn-primary {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.4) !important;
+    color: #fff !important;
+    font-size: 0.9rem !important;
+    padding: 8px 16px !important;
+  }
+
+  .feature-section-footer .btn-primary:hover {
+    background: rgba(255,255,255,0.1) !important;
+    border-color: #fff !important;
+  }
+
+  #hero .col-lg-6:last-child img {
+    background: #fff; 
+    border-radius: 4px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4); 
+    padding: 10px;
+    transform: perspective(1000px) rotateY(-5deg) rotateX(2deg);
+    transition: all 0.5s ease;
+  }
+
+  #hero .col-lg-6:last-child img:hover {
+    transform: perspective(1000px) rotateY(0) rotateX(0);
+    box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.5); 
+  } 
+  
+  #hero .free-trial-form .form-control {
+  font-size: 0.9rem;
+  border-radius: 999px;
+  padding: 10px 16px;
+  }
+
 </style>
 </body>
 </html>
