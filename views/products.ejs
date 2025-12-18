@@ -15,16 +15,30 @@
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
+
+    main {
+      flex-grow: 1;
+    }
+
     .hero-section {
       background: linear-gradient(rgba(179, 218, 160, 0.7), rgba(143, 188, 143, 0.7)), url('/api/placeholder/1920/1080');
       background-size: cover;
       background-position: center;
       color: var(--text-color);
-      padding: 120px 0;
+      padding: 40px 0;
       position: relative;
       overflow: hidden;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 360px;
     }
+
     .hero-section::before {
       content: '';
       position: absolute;
@@ -37,6 +51,7 @@
       filter: blur(5px);
       z-index: -1;
     }
+
     .feature-card {
       border: none;
       transition: transform 0.3s, box-shadow 0.3s;
