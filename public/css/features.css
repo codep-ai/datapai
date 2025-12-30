@@ -517,6 +517,8 @@ h6, .h6 {
 .lead {
     font-size: 1.25rem;
     font-weight: 400;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .display-1 {
     font-size: 6rem;
@@ -7936,6 +7938,8 @@ ul {
 .lead {
     line-height: 1.5;
     letter-spacing: 1px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .lead-lg {
     line-height: 1.83;
@@ -8018,6 +8022,8 @@ a.link-icon-light.link-icon-sm {
 .lead {
     line-height: 1.5;
     letter-spacing: 1px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .lead-lg {
     line-height: 1.83;
